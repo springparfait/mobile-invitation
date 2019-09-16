@@ -1,0 +1,427 @@
+/* ===============================
+
+           Global
+
+=============================== */
+.theme-divider-sm {
+  margin: 2.5em auto;
+  align-items: center;
+  width: 1.25em;
+  border-bottom: 1px solid #daa071;
+}
+.theme-divider-lg {
+  padding: 40px 40px 0px;
+  border-bottom: 1px solid #daa071;
+}
+.theme-title {
+  font-family: "Sacramento", cursive;
+  font-size: 2em;
+  margin-bottom: 1.5em;
+}
+.theme-subtext {
+  padding: 0em 0.625em;
+}
+/* ===============================
+
+           Theme's Specific
+
+=============================== */
+/* intro-container */
+.intro-container {
+  height: 37.5em;
+  width: 100vw;
+  background-size: auto 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+}
+@media (min-width: 896px) {
+  .intro-container {
+    background-size: 100% auto;
+  }
+}
+.intro-inner {
+  color: white;
+  text-align: center;
+  padding: 8.125em 2.5em;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.intro-inner > * {
+  z-index: 2;
+}
+.intro-inner .title {
+  font-weight: bold;
+  font-size: 2em;
+}
+.intro-inner .name {
+  padding-top: 1.25em;
+}
+.intro-inner .divider {
+  color: #daa071;
+}
+.intro-inner .local {
+  margin-top: 0.5em;
+}
+/* greet-container */
+.greet-container {
+  padding: 8.125em 2.5em;
+  background-color: #f4f0ed;
+  color: #1e1d1c;
+  text-align: center;
+}
+.greetings {
+  padding: 0em;
+  line-height: 2em;
+}
+@media (min-width: 896px) {
+  .greetings {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 600px;
+  }
+}
+.family-group {
+  font-size: 1.15em;
+  font-weight: bold;
+}
+.family-list li {
+  display: inline-block;
+}
+.family-list + .family-list {
+  margin-top: 0.5em;
+}
+.family-list .divider {
+  font-size: 0.5em;
+  color: #daa071;
+}
+.family-list .font-sm {
+  color: #5e5c59;
+  font-size: 0.625em;
+}
+.family-list li:last-child {
+  margin-left: 0.25em;
+}
+/* single-pic-container */
+.single-pic-container {
+  height: 20em;
+  width: 100%;
+  background-position: center;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+/* gallery-container */
+.gallery-container {
+  text-align: center;
+  max-width: 37.5em;
+  margin: 0 auto;
+  width: 100%;
+  min-height: 51em;
+  padding: 8.125em 2.5em;
+  background-color: white;
+}
+.gallery-container .row {
+  display: flex;
+  width: auto;
+}
+.gallery-container .row .column {
+  flex: 50%;
+  max-width: 50%;
+  padding: 0 0.25em;
+  height: auto;
+}
+.gallery-container .row .column > * {
+  margin-top: 0.5em;
+}
+.column .horizontal-pic {
+  width: 100%;
+  height: 12.5em;
+  background-size: 100% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.column .vertical-pic {
+  width: 100%;
+  height: 50%;
+  background-size: 100% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/* local-container */
+.local-container {
+  text-align: center;
+  padding: 8.125em 2.5em;
+  background-color: #f4f0ed;
+}
+.local-container .address {
+  font-size: 1.2em;
+}
+.local-container .hall {
+  font-size: 1.2em;
+  padding-top: 8px;
+  padding-bottom: 24px;
+}
+.local-container .hall::before {
+  content: "#";
+}
+.local-container .map {
+  width: 100%;
+  height: 300px;
+  border: solid 1px #daa071;
+  margin-bottom: 24px;
+}
+@media (min-width: 610px) {
+  .local-container .map {
+    max-width: 400px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.navi-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 60px 40px;
+  text-align: center;
+}
+.navi-container .title {
+  margin-top: 52px;
+  padding-top: 16px;
+  margin-bottom: 32px;
+  font-weight: bold;
+  height: 50px;
+  width: 100%;
+  text-align: center;
+  background-size: 40px 50px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.navi-container .title.title-bus {
+  margin-top: 0px;
+  background-image: url(../assets/ic/1.png);
+}
+.navi-container .title.title-subway {
+  background-image: url(../assets/ic/2.png);
+}
+.navi-container .title.title-car {
+  background-image: url(../assets/ic/3.png);
+}
+.navi-container .title.title-team {
+  background-image: url(../assets/ic/4.png);
+}
+.navi-container .detail {
+  text-align: left;
+  margin-bottom: 16px;
+}
+@media (min-width: 610px) {
+  .navi-container .detail {
+    text-align: center;
+  }
+}
+.navi-container .detail .light {
+  font-size: 12px;
+  color: #7b7671;
+}
+/* Form-container */
+.form-container {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0px 40px 90px;
+}
+.form-container .form {
+  height: 100%;
+  padding: 32px 0px 0px;
+}
+.form-container .form .btn-primary {
+  margin-top: 16px;
+}
+/* Contact-container */
+.contact-container {
+  text-align: center;
+  padding: 60px 40px 12px;
+  background-color: #f4f0ed;
+}
+.contact-container .contact-list {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  width: 100%;
+  margin-bottom: 40px;
+}
+.contact-container .contact-list li {
+  text-align: center;
+  width: 100%;
+  height: auto;
+}
+.contact-list img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 16px;
+}
+.footer {
+  margin-top: 12px;
+  color: #1e1d1c;
+  font-size: 12px;
+}
+.contact-container .lg-divider {
+  padding-top: 120px;
+}
+/* ==============================
+
+          Button
+
+============================== */
+.btn {
+  cursor: pointer;
+  text-align: center;
+  padding: 22px auto 18px;
+  border-radius: 4px;
+}
+.btn-primary {
+  min-height: 65px;
+  width: 100%;
+  background-color: #daa071;
+  font-size: 15px;
+  color: white;
+}
+@media (min-width: 610px) {
+  .btn-primary {
+    max-width: 400px;
+  }
+}
+.btn img {
+  width: 14px;
+  height: auto;
+  margin-right: 8px;
+  margin-bottom: 2px;
+}
+/* ==============================
+
+          Form
+
+============================== */
+.input {
+  width: 100%;
+  height: 50px;
+  margin-bottom: 16px;
+}
+.input input {
+  border: solid 1px #000000;
+  padding: 14px 16px 14px;
+  width: 100%;
+  border-radius: 4px;
+}
+.input input::placeholder {
+  color: #888480;
+}
+.text-area {
+  width: 100%;
+  height: 156px;
+}
+.select select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -webkit-border-radius: 0px;
+  height: 50px;
+  border: solid 1px #000000;
+  background-color: white;
+  padding: 14px 16px 14px;
+  width: 100%;
+  margin-bottom: 16px;
+  background-image: url(../assets/ic/chevron-down.svg);
+  background-size: 24px 24px;
+  background-repeat: no-repeat;
+  background-position: 97% 12px;
+  border-radius: 4px;
+}
+.select select:disabled {
+  color: #888480;
+}
+.text-area textarea {
+  border: solid 1px #000000;
+  padding: 14px 16px 14px;
+  width: 100%;
+  height: 156px;
+  border-radius: 4px;
+}
+/* ==============================
+
+          Modal
+
+============================== */
+.modal-container {
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  position: relative;
+  overflow-x: hidden;
+}
+.modal-close {
+  position: absolute;
+  right: 0.5em;
+  top: 0.5em;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.modal-close img {
+  width: 2em;
+  height: 2em;
+}
+.modal-contents {
+  line-height: 100vh;
+  text-align: center;
+}
+.modal-contents img {
+  width: 90%;
+  height: auto;
+}
+.modal-navigation {
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.modal-navigation img {
+  width: 2.5em;
+  margin: 1.25em;
+}
+.modal-navigation span {
+  color: white;
+}
+/* Web version */
+@media (min-width: 896px) {
+  .modal-container {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: relative;
+    overflow-x: hidden;
+  }
+  .modal-contents {
+    line-height: 100vh;
+    text-align: center;
+  }
+  .modal-contents img {
+    max-width: 400px;
+    height: auto;
+  }
+  .modal-navigation {
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+  .modal-navigation img {
+    width: 2.5em;
+    margin: 1.25em;
+  }
+  .modal-navigation span {
+    color: white;
+  }
+}
