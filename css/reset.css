@@ -43,8 +43,6 @@ section {
 
 body {
   margin: 0;
-  /*font-family: "Nanum Barun Gothic", sans-serif;*/
-  font-family: "Nanum Myeongjo";
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -152,14 +150,14 @@ sup {
 }
 
 a {
-  color: #daa071;
+  color: #000000;
   text-decoration: none;
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
 }
 
 a:hover {
-  color: #daa071;
+  color: #000000;
   text-decoration: none;
 }
 
@@ -352,4 +350,5 @@ template {
 [hidden] {
   display: none !important;
 }
+
 /*# sourceMappingURL=bootstrap-reboot.css.map */
