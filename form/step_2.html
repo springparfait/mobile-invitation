@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link href="./fonts/nanumbarungothic/nanumbarungothic.css" rel="stylesheet" type="text/css" />
+  <link href="./fonts/Vollkorn/Vollkorn.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="./css/reset.css" />
+  <link rel="stylesheet" href="./css/form.css" />
+  <title>주문폼 : 사진업로드</title>
+</head>
+
+<body>
+  <!-- Navigation 로그인 후 -->
+  <div class="main-nav">
+    <ul class="nav-list">
+      <li><a class="text-logo" href="#">moin.form</a></li>
+      <li class="user" style="float:right">
+        <a href="#"><img src="./assets/ic/power.svg" />로그아웃</a>
+      </li>
+    </ul>
+  </div>
+  <!-- Writing Container -->
+  <div class="writing-container">
+    <div class="step-list">
+      <ul>
+        <li>
+          <img src="./assets/ic/users_active.svg" />내용 입력<img class="step-state" src="./assets/ic/edit-3_caution.svg" />
+        </li>
+        <li><img src="./assets/ic/image.svg" />사진업로드</li>
+        <hr class="lv2" />
+        <a href="#">
+          <li><img src="./assets/ic/stop-circle.svg" />링크 정지하기</li>
+        </a>
+        <a href="#">
+          <li class="caution">
+            <img src="./assets/ic/trash-2.svg" />링크 삭제하기
+          </li>
+        </a>
+      </ul>
+    </div>
+    <div class="detail-form-list">
+      <div class="step-title first">
+        사진 업로드 <span class="caution">* 필수 입력항목입니다</span>
+      </div>
+      <div class="half-form">
+        <form>
+          <div class="input-group">
+            <label>대표 메인사진</label>
+            <div class="photo-select-group">
+              <div class="photo-select"></div>
+              <div class="filebox">
+                <label for="ex_file">파일선택</label>
+                <input type="file" id="ex_file" />
+                <span class="notice">* 한장만 업로드 가능합니다</span>
+              </div>
+            </div>
+          </div>
+          <div class="input-group">
+            <label>카카오톡 공유사진</label>
+            <div class="photo-select-group">
+              <div class="photo-select preview">
+                <img class="photo-delete" src="./assets/ic/x.svg" />
+              </div>
+              <div class="filebox">
+                <label for="ex_file">파일선택</label>
+                <input type="file" id="ex_file" />
+                <span class="notice">* 한장만 업로드 가능합니다</span>
+              </div>
+            </div>
+          </div>
+        </form>
+        <form>
+          <div class="input-group">
+            <label>모시는 글 사진</label>
+            <div class="photo-select-group">
+              <div class="photo-select"></div>
+              <div class="filebox">
+                <label for="ex_file">파일선택</label>
+                <input type="file" id="ex_file" />
+                <span class="notice">* 한장만 업로드 가능합니다</span>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <form>
+        <hr class="trans lv1" />
+        <div class="input-group">
+          <label>갤러리 사진</label>
+          <div class="photo-select-group">
+            <div class="photo-select"></div>
+            <div class="photo-select"></div>
+            <div class="photo-select"></div>
+            <div class="photo-select"></div>
+            <div class="photo-select"></div>
+            <div class="photo-select"></div>
+          </div>
+          <div class="photo-select-group">
+            <div class="photo-select"></div>
+            <div class="photo-select"></div>
+            <div class="photo-select"></div>
+            <div class="photo-select"></div>
+            <div class="photo-select"></div>
+            <div class="photo-select"></div>
+          </div>
+          <div class="filebox">
+            <label for="ex_file">파일선택</label>
+            <input type="file" id="ex_file" />
+            <span class="notice">* 최소 2장, 최대 12장까지 순서대로 업로드 가능합니다</span>
+          </div>
+        </div>
+      </form>
+      <!-- 추가 요청사항 -->
+      <div class="step-title">
+        추가 요청사항
+      </div>
+      <div class="input-group">
+        <textarea placeholder="추가 요청사항을 입력하세요." style="height:90px"></textarea>
+      </div>
+      <!-- 구매정보 -->
+      <div class="step-title">
+        구매정보
+      </div>
+      <div class="half-form">
+        <form>
+          <div class="input-group row">
+            <label>구매사이트</label>
+            <select>
+              <option>스프링파르페 홈페이지</option>
+            </select>
+          </div>
+        </form>
+        <form>
+          <div class="input-group row">
+            <label>구매자 아이디</label>
+            <input type="text" placeholder="아이디 입력" />
+          </div>
+        </form>
+      </div>
+      <hr class="trans lv1" />
+      <div class="noti-box">
+        <div class="bold">안내사항 확인</div>
+        <ul>
+          <li>* 입력하신 정보를 바탕으로 모바일 청첩장을 제작합니다</li>
+          <li>
+            * 최초 모바일 청첩장 링크 제작 후 <em>간편수정 </em>이 가능합니다
+          </li>
+          <li>* 자세한 내용은 FAQ 에서 확인하실 수 있습니다</li>
+        </ul>
+      </div>
+      <div class="action-area">
+        <button type="button" class="btn btn-primary">
+          제작 요청하기
+        </button>
+        <button type="button" class="btn btn-default">임시저장</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>Copyright © moti Inc. All Right Reserved.</footer>
+</body>
+
+</html>

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link href="./fonts/nanumbarungothic/nanumbarungothic.css" rel="stylesheet" type="text/css" />
+  <link href="./fonts/Vollkorn/Vollkorn.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="./css/reset.css" />
+  <link rel="stylesheet" href="./css/form.css" />
+  <title>주문폼 : 내용입력</title>
+</head>
+
+<body>
+  <!-- Navigation 로그인 후 -->
+  <div class="main-nav">
+    <ul class="nav-list">
+      <li><a class="text-logo" href="#">moin.form</a></li>
+      <li class="user" style="float:right">
+        <a href="#"><img src="./assets/ic/power.svg" />로그아웃</a>
+      </li>
+    </ul>
+  </div>
+  <!-- Writing Container -->
+  <div class="writing-container">
+    <div class="step-list">
+      <ul>
+        <li>
+          <img src="./assets/ic/users_active.svg" />내용 입력<img class="step-state" src="./assets/ic/edit-3_caution.svg" />
+        </li>
+        <li><img src="./assets/ic/image.svg" />사진업로드</li>
+        <hr class="lv2" />
+        <a href="#">
+          <li><img src="./assets/ic/stop-circle.svg" />링크 정지하기</li>
+        </a>
+        <a href="#">
+          <li class="caution">
+            <img src="./assets/ic/trash-2.svg" />링크 삭제하기
+          </li>
+        </a>
+      </ul>
+    </div>
+    <div class="detail-form-list">
+      <!-- 기본정보 -->
+      <div class="step-title first">
+        기본정보 <span class="caution">* 필수 입력항목입니다</span>
+      </div>
+      <div class="half-form">
+        <form>
+          <div class="input-group row">
+            <label>신랑님 성함(한글)</label>
+            <input type="text" placeholder="박용준" />
+          </div>
+          <div class="input-group row">
+            <label>신랑님 성함(영문)</label>
+            <input type="text" placeholder="Park young jun" />
+          </div>
+          <div class="input-group row">
+            <label>신랑님 핸드폰번호</label>
+            <input type="text" placeholder="01012345678" />
+          </div>
+          <div class="input-group row">
+            <label>신랑님 이메일<sup class="caution">*</sup></label>
+            <input type="email" placeholder="youngjun@gmail.com" />
+          </div>
+        </form>
+        <form>
+          <div class="input-group row">
+            <label>신부님 성함(한글)<sup class="caution">*</sup></label>
+            <input type="text" placeholder="배수진" />
+          </div>
+          <div class="input-group row">
+            <label>신부님 성함(영문)</label>
+            <input type="text" placeholder="Bae su jin" />
+          </div>
+          <div class="input-group row">
+            <label>신부님 핸드폰번호<sup class="caution">*</sup></label>
+            <input type="text" placeholder="01012345678" />
+          </div>
+          <div class="input-group row">
+            <label>신부님 이메일<sup class="caution">*</sup></label>
+            <input type="email" placeholder="sujin@gmail.com" />
+          </div>
+        </form>
+      </div>
+      <!-- 인사말 -->
+      <div class="step-title">
+        인사말 <span class="caution">* 필수 입력항목입니다</span>
+      </div>
+      <div class="input-group">
+        <textarea class="intro-text"
+          placeholder="오래전부터 기다려왔던 사람을 드디어 만났습니다.&#13;&#10;먼길 힘드시겠지만 꼭 오셔서&#13;&#10;&#13;&#10;여러분들이 걸어오셨던 인생의 지혜와 용기를&#13;&#10;저희에게 나눠주십시요.&#13;&#10;&#13;&#10;여러분들께서 가르쳐주신대로 바르게 제대로 걸어가겠습니다. "
+          style="height:180px"></textarea>
+      </div>
+      <!-- 인사말 가족정보 -->
+      <div class="input-group row">
+        <label>신랑님 가족정보</label>
+        <input type="text" placeholder="아버지 성함" />
+        <span class="form-inner-guide">-</span>
+        <input type="text" placeholder="어머니 성함" />
+        <span class="form-inner-guide">의</span>
+        <select>
+          <option>장남</option>
+          <option>차남</option>
+          <option>삼남</option>
+          <option>사남</option>
+          <option>오남</option>
+        </select>
+      </div>
+      <div class="input-group row">
+        <label>신부님 가족정보</label>
+        <input type="text" placeholder="아버지 성함" />
+        <span class="form-inner-guide">-</span>
+        <input type="text" placeholder="어머니 성함" />
+        <span class="form-inner-guide">의</span>
+        <select>
+          <option>장녀</option>
+          <option>차녀</option>
+          <option>삼녀</option>
+          <option>사녀</option>
+          <option>오녀</option>
+        </select>
+      </div>
+      <span style="padding-top: 12px; display: block;" class="notice">* 인사말 추가되는 정보입니다(입력정보가 없을 경우 신랑님-신부님 성함으로
+        대체됩니다)</span>
+      <!-- 예식 일시 -->
+      <div class="step-title">
+        예식 일시 <span class="caution">* 필수 입력항목입니다</span>
+      </div>
+      <div class="input-group row">
+        <input type="text" placeholder="2019-10-20" />
+        <button class="btn btn-icon-only btn-primary"><img src="./assets/ic/calendar.svg" alt=""></button>
+        <select>
+          <option>오전 9시</option>
+          <option>오전 10시</option>
+          <option>오전 11시</option>
+          <option>오전 12시</option>
+          <option>오후 1시</option>
+          <option>오후 2시</option>
+          <option>오후 3시</option>
+          <option>오후 4시</option>
+          <option>오후 5시</option>
+          <option>오후 6시</option>
+          <option>오후 7시</option>
+          <option>오후 8시</option>
+          <option>오후 9시</option>
+        </select>
+        <select>
+          <option>10분</option>
+          <option>20분</option>
+          <option>30분</option>
+          <option>40분</option>
+          <option>50분</option>
+        </select>
+      </div>
+      <!-- 예식 장소 -->
+      <div class="step-title">
+        예식 장소 <span class="caution">* 필수 입력항목입니다</span>
+      </div>
+      <div class="input-group row">
+        <input type="text" placeholder="행사장 찾기" />
+        <button class="btn btn-icon-only btn-primary"><img src="./assets/ic/search.svg" alt=""></button>
+        <input type="text" placeholder="예식장 명/층/홀 입력" />
+      </div>
+      <div style="margin-top: 8px;" class="input-group row">
+        <input type="text" placeholder="주소" />
+      </div>
+      <!-- 예식 장소 상세입력 -->
+      <div class="step-title">
+        예식 장소 상세입력
+      </div>
+      <div class="input-group row">
+        <label>버스</label>
+        <input type="text" placeholder="[장충체육관 정류장 하차] 간선 : 144, 301, N13 지선 : 7212 공항 : 6702" />
+      </div>
+      <div class="input-group row">
+        <label>지하철</label>
+        <input type="text" placeholder="3호선 동대입구역 하차 5번출구 5분 또는 셔틀버스 이용" />
+      </div>
+      <div class="input-group row">
+        <label>주차</label>
+        <input type="text" placeholder="호텔주차장 이용가능, 발렛서비스 이용 시 별도비용 부가이용" />
+      </div>
+      <div class="input-group row">
+        <label>전세버스</label>
+        <input type="text" placeholder="신랑측 : 예식당일 오전 9시,  장소 - 하나로마트 정문 출발" />
+      </div>
+      <div class="input-group row">
+        <label>약도첨부</label>
+        <input type="text" placeholder="선택한 파일 없음" />
+        <button class="btn btn-sm btn-primary">파일 선택</button>
+      </div>
+      <span style="padding-top: 12px; display: block;" class="notice">* 버스/지하철/주차/전세버스는 선택사항입니다. 입력정보가 없을 경우 표시하지
+        않습니다.</span>
+      <!-- 청첩장 구성 선택 -->
+      <div class="step-title">
+        청첩장 구성 선택
+      </div>
+      <div class="half-form">
+        <form>
+          <div class="input-group row">
+            <label>* 방명록</label>
+            <label class="radio-wrap">선택함
+              <input type="radio" checked="checked" name="radio">
+              <span class="checkmark"></span>
+            </label>
+            <label class="radio-wrap">선택안함
+              <input type="radio" name="radio">
+              <span class="checkmark"></span>
+            </label>
+          </div>
+        </form>
+        <form>
+          <div class="input-group row">
+            <label>* RSVP(참석여부)</label>
+            <label class="radio-wrap">선택함
+              <input type="radio" checked="checked" name="radio">
+              <span class="checkmark"></span>
+            </label>
+            <label class="radio-wrap">선택안함
+              <input type="radio" name="radio">
+              <span class="checkmark"></span>
+            </label>
+          </div>
+        </form>
+      </div>
+      <div style="margin-top: 16px;" class="input-group row">
+        <label>* 기본 배경음악</label>
+        <label class="radio-wrap">선택함
+          <input type="radio" checked="checked" name="radio">
+          <span class="checkmark"></span>
+        </label>
+        <label class="radio-wrap">선택안함
+          <input type="radio" name="radio">
+          <span class="checkmark"></span>
+        </label>
+      </div>
+      <div class="input-group row">
+        <label>배경음악 첨부</label>
+        <input type="text" placeholder="선택한 파일 없음" />
+        <button class="btn btn-sm btn-primary">파일 선택</button>
+      </div>
+      <div class="action-area">
+        <button type="button" class="btn btn-primary">
+          저장 후 다음단계로 이동
+        </button>
+        <button type="button" class="btn btn-default">임시저장</button>
+      </div>
+    </div>
+  </div>
+  <!-- Footer -->
+  <footer>Copyright © moti Inc. All Right Reserved.</footer>
+</body>
+
+</html>
