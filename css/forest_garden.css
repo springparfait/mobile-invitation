@@ -1,0 +1,151 @@
+/*
+ * 나눔명조 : 400, 700, 800
+ * 
+ */
+
+@font-face {
+  font-family: 'Nanum Myeongjo', serif;
+  src: url('../assets/font/Nanum_Myeongjo/NanumMyeongjo-Regular.ttf')
+    format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Nanum Myeongjo', serif;
+  src: url('../assets/font/Nanum_Myeongjo/NanumMyeongjo-Bold.ttf') format('svg');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Nanum Myeongjo', serif;
+  src: url('../assets/font/Nanum_Myeongjo/NanumMyeongjo-ExtraBold.ttf');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Pinyon Script', cursive;
+  src: url('../assets/font/Pinyon_Script/PinyonScript-Regular.ttf')
+    format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Rozha One', serif;
+  src: url('../assets/font/Rozha_One/RozhaOne-Regular.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Nanum Myeongjo', serif;
+  font-weight: 400;
+}
+
+.main-container {
+  position: relative;
+  height: 100vh;
+  background-color: rgba(64, 64, 64, 0.38);
+  background-image: url(../assets/img/loading.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.main-container .photo-wrap {
+  height: 100%;
+  width: 100%;
+  background-image: url(../assets/sample-img/forest-garden/main.jpg);
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+}
+
+.main-container .photo-wrap .color-bg {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(23, 57, 28, 0.3);
+}
+
+.main-container .photo-wrap .name {
+  position: absolute;
+  top: 200px;
+  width: 100%;
+  height: 300px;
+  background-image: url(../assets/img/forest-garden/main_&.png);
+  background-repeat: no-repeat;
+  background-size: 187px auto;
+  background-position: center;
+  padding-top: 90px;
+  border: 1px solid red;
+}
+
+.main-container .photo-wrap .name p {
+  font-size: 48px;
+  font-family: 'Pinyon Script', cursive;
+  height: 60px;
+  line-height: 60px;
+  color: rgba(255, 255, 255, 0.8);
+  border: 1px solid blue;
+}
+
+@media only screen and (max-width: 320px) {
+  .main-container .photo-wrap .name {
+    top: 100px;
+  }
+  .main-container .photo-wrap .name p {
+    font-size: 40px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .main-container .photo-wrap .name {
+    top: 240px;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .main-container .photo-wrap .name {
+    top: 320px;
+  }
+}
+
+.main-container .photo-wrap .name p + p {
+  margin-top: 0px;
+}
+.main-container .date-wrap {
+  position: absolute;
+  bottom: 0px;
+  background-color: aquamarine;
+  height: 124px;
+  width: 100%;
+}
+
+.main-container .date-wrap .date-inner {
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: wheat;
+  height: 100%;
+  display: flex;
+}
+
+.main-container .date-wrap .date-inner > div {
+  background-color: red;
+  height: 64px;
+  width: 100%;
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-family: 'Rozha One', serif;
+}
+
+.main-container .date-wrap .date-inner > div + div {
+  border-left: 1px solid #000000;
+}
+
+.main-container .date-wrap .date-inner > div p:first-child {
+  font-size: 24px;
+}
