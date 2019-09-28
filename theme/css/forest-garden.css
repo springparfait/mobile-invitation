@@ -1,0 +1,762 @@
+/*
+ * 나눔명조 : 400, 700, 800
+ * Pinyon : normal
+ * Rozha : normal
+ */
+
+/* 사파리 폰트 불러오기 안됨
+@font-face {
+  font-family: 'Nanum Myeongjo', serif;
+  src: url('../assets/font/Nanum_Myeongjo/NanumMyeongjo-Regular.ttf') format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Nanum Myeongjo', serif;
+  src: url('../assets/font/Nanum_Myeongjo/NanumMyeongjo-Bold.ttf') format('svg');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Nanum Myeongjo', serif;
+  src: url('../assets/font/Nanum_Myeongjo/NanumMyeongjo-ExtraBold.ttf');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Pinyon Script', cursive;
+  src: url('../assets/font/Pinyon_Script/PinyonScript-Regular.ttf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Rozha One', serif;
+  src: url('../assets/font/Rozha_One/RozhaOne-Regular.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+*/
+
+body {
+  font-family: 'Nanum Myeongjo', serif;
+  font-weight: 400;
+  font-size: 15px;
+  color: #384a43;
+}
+
+/* ================================
+
+      전체 폰트/마진/패딩 설정
+
+================================ */
+/* 컨테이너 상단의 패딩 값 */
+.bold {
+  font-weight: 700;
+}
+.pdt-1 {
+  padding-top: 72px;
+}
+.pdb-1 {
+  padding-bottom: 72px;
+}
+.pdt-2 {
+  padding-top: 124px;
+}
+.pdb-2 {
+  padding-bottom: 124px;
+}
+/* ================================
+
+      전체 디자인 요소
+
+================================ */
+.leaf-img {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.leaf-img img {
+  width: 124px;
+  height: 50px;
+  /* test */
+  border: 1px solid darkgoldenrod;
+}
+
+.heading {
+  font-size: 19px;
+  font-weight: 800;
+  text-align: center;
+  color: #384a43;
+  /* test */
+  border: 1px solid darkgreen;
+}
+
+.heading-info {
+  padding-top: 16px;
+  font-size: 14px;
+  /* test */
+  border: 1px solid red;
+}
+
+/* ================================
+
+      메인
+
+================================ */
+/* 
+
+      메인 사진 영역
+
+*/
+.main-container {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-image: url(../assets/img/loading.svg);
+  background-size: 52px 52px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: rgba(64, 64, 64, 0.38);
+}
+
+.main-container .photo-wrap {
+  height: 100%;
+  width: 100%;
+  background-image: url(../assets/sample-img/forest-garden/main.jpg);
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+}
+
+.main-container .photo-wrap .color-bg {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(23, 57, 28, 0.3);
+}
+
+/* 
+
+      메인 이름 영역
+
+*/
+/* 기본 아이폰 6/7/8 */
+.main-container .photo-wrap .name {
+  position: absolute;
+  top: 160px;
+  width: 100%;
+  height: 280px;
+  background-image: url(../assets/img/forest-garden/main_&.png);
+  background-repeat: no-repeat;
+  background-size: 240px auto;
+  background-position: center;
+  padding-top: 90px;
+  /* test */
+  border: 1px solid red;
+}
+
+.main-container .photo-wrap .name p {
+  font-size: 48px;
+  font-family: 'Pinyon Script', cursive;
+  height: 60px;
+  line-height: 60px;
+  color: rgba(255, 255, 255, 0.7);
+  /* test */
+  border: 1px solid blue;
+}
+
+/* 기본 아이폰 5/SE */
+@media only screen and (max-width: 320px) {
+  .main-container .photo-wrap .name {
+    top: 120px;
+    height: 240px;
+    background-image: url(../assets/img/forest-garden/main_&.png);
+    background-repeat: no-repeat;
+    background-size: 200px auto;
+    background-position: center;
+    padding-top: 70px;
+  }
+
+  .main-container .photo-wrap .name p {
+    font-size: 36px;
+    height: 50px;
+    line-height: 50px;
+  }
+}
+
+/* 타블렛 */
+@media only screen and (min-width: 768px) {
+  .main-container .photo-wrap .name {
+    top: 240px;
+  }
+}
+
+/* 데스크탑 */
+@media only screen and (min-width: 900px) {
+  .main-container .photo-wrap .name {
+    top: 320px;
+  }
+}
+
+.main-container .photo-wrap .name p + p {
+  margin-top: 0px;
+}
+
+/* 
+
+      메인 장소 영역
+
+*/
+
+.main-container .location {
+  position: absolute;
+  text-align: center;
+  bottom: 124px;
+  width: 100%;
+  padding-bottom: 20px;
+  color: #ffffff;
+  /* test */
+  border: 1px solid darkgreen;
+}
+
+.main-container .location .divider {
+  width: 160px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 20px;
+  /* test */
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.main-container .location p {
+  height: 28px;
+  line-height: 28px;
+  font-size: 16px;
+  /* test */
+  border: 1px solid fuchsia;
+}
+
+/* 기본 아이폰 5/SE */
+@media only screen and (max-width: 320px) {
+  .main-container .location {
+    padding-bottom: 16px;
+  }
+
+  .main-container .location .divider {
+    padding-bottom: 16px;
+  }
+
+  .main-container .location p {
+    font-size: 14px;
+    height: 24px;
+    line-height: 24px;
+    /* test */
+    border: 1px solid fuchsia;
+  }
+}
+
+.main-container .location .mention {
+  font-family: 'Homemade Apple', cursive;
+}
+
+/* 
+
+      메인 날짜/시간 영역
+
+*/
+
+.main-container .date-wrap {
+  position: absolute;
+  bottom: 0px;
+  height: 124px;
+  width: 100%;
+  /* test */
+  background-color: aquamarine;
+}
+
+.main-container .date-wrap .date-inner {
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+  display: flex;
+  /* test */
+  background-color: wheat;
+}
+
+.main-container .date-wrap .date-inner > div {
+  height: 64px;
+  width: 100%;
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-family: 'Rozha One', serif;
+  color: #384a43;
+  /* test */
+  background-color: red;
+}
+
+.main-container .date-wrap .date-inner > div + div {
+  /* test */
+  border-left: 1px solid #000000;
+}
+
+.main-container .date-wrap .date-inner > div p:first-child {
+  font-size: 24px;
+}
+/* ================================
+
+      인사말
+
+================================ */
+/* 
+
+      인사말 영역
+
+*/
+.greetings-container {
+  text-align: center;
+  /* test */
+  background-color: teal;
+}
+
+.greetings-container .greetings-wrap {
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+  /* test */
+  background-color: yellowgreen;
+}
+
+.greetings-ment {
+  padding-top: 48px;
+  padding-bottom: 32px;
+  margin-left: 16px;
+  margin-right: 16px;
+  /* test */
+  border: 1px solid red;
+}
+/* 
+
+      가족이름 영역
+
+*/
+.family-name {
+  padding: 32px 0;
+  margin: 0 60px;
+  border-top: 1px solid #dddddd;
+}
+
+.family-name .sub-title {
+  font-size: 13px;
+  margin-bottom: 12px;
+}
+
+.family-name .sub-title.second {
+  margin-top: 28px;
+}
+
+.family-name .bold {
+  margin-left: 4px;
+}
+/* 
+
+      신랑신부 이름만
+
+*/
+.greetings-container .greetings-wrap .simple-name {
+  font-size: 13px;
+  padding-bottom: 32px;
+}
+
+.greetings-photo {
+  max-width: 375px;
+  height: 240px;
+}
+
+.greetings-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* ================================
+
+      갤러리
+
+================================ */
+/* 
+
+      갤러리 감싸는 영역
+
+*/
+.gallery-container {
+  /* test */
+  background-color: #384a43;
+}
+/* 
+
+      20장 이하
+
+*/
+.gallery-less {
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+  /* test */
+  background-color: thistle;
+}
+
+.gallery-less .heading {
+  text-align: left;
+}
+
+.gallery-less .photo-wrap {
+  margin-top: 24px;
+}
+
+.gallery-less .photo-grid {
+  display: flex;
+}
+
+.gallery-less .photo-grid .col-lg {
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* test */
+  background-color: aqua;
+  border: 1px solid red;
+}
+
+.gallery-less .photo-grid + .photo-grid {
+  margin-top: 16px;
+}
+
+.gallery-less .photo-grid .col-md {
+  width: 60%;
+  /* test */
+  background-color: aqua;
+  border: 1px solid red;
+}
+
+.gallery-less .photo-grid .col-md > div {
+  width: 100%;
+  padding-bottom: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* test */
+  background-color: coral;
+  border: 1px solid forestgreen;
+}
+
+.gallery-less .photo-grid .col-sm {
+  width: 40%;
+  margin-left: 16px;
+  /* test */
+  background-color: aqua;
+  border: 1px solid red;
+}
+
+.gallery-less .photo-grid .col-sm > div {
+  width: 100%;
+  padding-bottom: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* test */
+  background-color: coral;
+  border: 1px solid forestgreen;
+}
+
+.gallery-less .photo-grid .col-sm div + div {
+  margin-top: 16px;
+}
+
+.gallery-less .photo-grid .col-md div + div {
+  margin-top: 32px;
+}
+/* 
+
+      20장 초과
+
+*/
+.gallery-more {
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+  /* test */
+  background-color: thistle;
+}
+
+.gallery-more .heading {
+  text-align: left;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.gallery-more .heading-info {
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.gallery-more .photo-grid {
+  position: relative;
+  height: 252px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 44px;
+  margin-bottom: 44px;
+}
+
+.gallery-more .photo-grid div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 48px;
+  height: 100%;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.11),
+    rgba(0, 0, 0, 0.12)
+  );
+}
+
+.gallery-more .photo-grid a:last-child div {
+  left: unset;
+  right: 0;
+}
+
+.gallery-more .photo-grid div img {
+  margin-top: 120px;
+  margin-left: 16px;
+  width: 14px;
+  height: auto;
+}
+
+.gallery-more .photo-number {
+  font-family: 'Rozha One', serif;
+  text-align: right;
+  font-size: 22px;
+  width: 100%;
+  padding-right: 16px;
+  /* test */
+  background-color: red;
+}
+.gallery-more .photo-number span:first-child {
+  font-size: 42px;
+}
+/* 
+
+      갤러리 샘플
+
+*/
+.p-img-1 {
+  background-image: url(../assets/sample-img/all/gallery_1.jpg);
+}
+
+.p-img-2 {
+  background-image: url(../assets/sample-img/all/gallery_2.jpg);
+}
+
+.p-img-3 {
+  background-image: url(../assets/sample-img/all/gallery_3.jpg);
+}
+
+.p-img-4 {
+  background-image: url(../assets/sample-img/all/gallery_4.jpg);
+}
+
+.p-img-5 {
+  background-image: url(../assets/sample-img/all/gallery_5.jpg);
+}
+
+.p-img-6 {
+  background-image: url(../assets/sample-img/all/gallery_6.jpg);
+}
+
+.p-img-7 {
+  background-image: url(../assets/sample-img/all/gallery_7.jpg);
+}
+
+.p-img-8 {
+  background-image: url(../assets/sample-img/all/gallery_8.jpg);
+}
+
+.p-img-9 {
+  background-image: url(../assets/sample-img/all/gallery_9.jpg);
+}
+
+.p-img-10 {
+  background-image: url(../assets/sample-img/all/gallery_10.jpg);
+}
+
+.p-img-11 {
+  background-image: url(../assets/sample-img/all/gallery_1.jpg);
+}
+/* ================================
+
+      찾아오시는 길
+
+================================ */
+/* 
+
+      요약정보
+
+*/
+.map-short-container {
+  width: 100%;
+  /* test */
+  background-color: #384a43;
+}
+.map-short-info {
+  max-width: 375px;
+  /* test */
+  background-color: wheat;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+.map-short-info .heading {
+  padding-bottom: 28px;
+}
+.map-short-info .map-img {
+  width: 100%;
+  height: 220px;
+  /* test */
+  border: 1px solid red;
+  margin-bottom: 8px;
+}
+.map-short-info .map-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.map-short-info .info-grid {
+  display: flex;
+  height: auto;
+  font-weight: 700;
+  margin-top: 40px;
+}
+
+.map-short-info .info-grid + .info-grid {
+  margin-top: 20px;
+}
+.map-short-info .info-grid .info-ic {
+  width: 24px;
+  height: 24px;
+  margin-right: 16px;
+}
+.map-short-info .info-grid .info-ic img {
+  width: 100%;
+  height: 100%;
+  margin-top: -2px;
+}
+/* 
+
+      상세정보
+
+*/
+.map-detail-container {
+  width: 100%;
+  /* test */
+  background-color: darkgrey;
+}
+
+.map-detail-info {
+  max-width: 375px;
+  /* test */
+  background-color: wheat;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.map-detail-info .transfer-grid + .transfer-grid {
+  margin-top: 44px;
+}
+
+.map-detail-info .transfer-grid .divider {
+  width: 19px;
+  height: 1px;
+  margin-bottom: 20px;
+  border: solid 1px #384a43;
+}
+
+.map-detail-info .transfer-grid .title {
+  font-size: 16px;
+  font-weight: 800;
+  margin-bottom: 16px;
+}
+
+.map-detail-info .transfer-grid .sub-title {
+  font-size: 12px;
+  color: #7d7d7d;
+  margin-bottom: 4px;
+}
+
+.map-detail-info .transfer-grid .info {
+  font-size: 16px;
+  font-weight: 800;
+  color: #555555;
+}
+
+.map-detail-info .transfer-grid .info + .sub-title {
+  margin-top: 16px;
+}
+
+.map-detail-info .transfer-grid .sub-title.hint {
+  margin-top: 0;
+}
+/* ================================
+
+      방명록 & RSVP
+
+================================ */
+/* 
+
+      FIXME: 방명록
+
+*/
+.bbs-container {
+  width: 100%;
+  /* test */
+  background-color: #384a43;
+}
+
+.bbs-wrap {
+  max-width: 375px;
+  /* test */
+  background-color: wheat;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.bbs-wrap .heading-info {
+  text-align: center;
+}
+
+/* ================================
+
+      버튼/효과
+
+================================ */
+.btn {
+  width: 100%;
+  height: 48px;
+  line-height: 48px;
+  color: #384a43;
+  font-weight: 800;
+  font-size: 15px;
+  border: 1px solid #384a43;
+  background-color: transparent;
+}
+.disable {
+  opacity: 0.4;
+}
