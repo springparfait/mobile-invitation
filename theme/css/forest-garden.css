@@ -46,6 +46,7 @@ body {
   font-weight: 400;
   font-size: 15px;
   color: #384a43;
+  background-color: #516657;
 }
 
 /* ================================
@@ -57,18 +58,23 @@ body {
 .bold {
   font-weight: 700;
 }
+
 .pdt-1 {
   padding-top: 72px;
 }
+
 .pdb-1 {
   padding-bottom: 72px;
 }
+
 .pdt-2 {
   padding-top: 124px;
 }
+
 .pdb-2 {
   padding-bottom: 124px;
 }
+
 /* ================================
 
       전체 디자인 요소
@@ -201,7 +207,7 @@ body {
   }
 }
 
-.main-container .photo-wrap .name p + p {
+.main-container .photo-wrap .name p+p {
   margin-top: 0px;
 }
 
@@ -287,7 +293,7 @@ body {
   background-color: wheat;
 }
 
-.main-container .date-wrap .date-inner > div {
+.main-container .date-wrap .date-inner>div {
   height: 64px;
   width: 100%;
   text-align: center;
@@ -299,14 +305,15 @@ body {
   background-color: red;
 }
 
-.main-container .date-wrap .date-inner > div + div {
+.main-container .date-wrap .date-inner>div+div {
   /* test */
   border-left: 1px solid #000000;
 }
 
-.main-container .date-wrap .date-inner > div p:first-child {
+.main-container .date-wrap .date-inner>div p:first-child {
   font-size: 24px;
 }
+
 /* ================================
 
       인사말
@@ -339,6 +346,7 @@ body {
   /* test */
   border: 1px solid red;
 }
+
 /* 
 
       가족이름 영역
@@ -362,6 +370,7 @@ body {
 .family-name .bold {
   margin-left: 4px;
 }
+
 /* 
 
       신랑신부 이름만
@@ -382,6 +391,7 @@ body {
   height: 100%;
   object-fit: cover;
 }
+
 /* ================================
 
       갤러리
@@ -396,6 +406,7 @@ body {
   /* test */
   background-color: #384a43;
 }
+
 /* 
 
       20장 이하
@@ -435,7 +446,7 @@ body {
   border: 1px solid red;
 }
 
-.gallery-less .photo-grid + .photo-grid {
+.gallery-less .photo-grid+.photo-grid {
   margin-top: 16px;
 }
 
@@ -446,7 +457,7 @@ body {
   border: 1px solid red;
 }
 
-.gallery-less .photo-grid .col-md > div {
+.gallery-less .photo-grid .col-md>div {
   width: 100%;
   padding-bottom: 100%;
   background-size: cover;
@@ -465,7 +476,7 @@ body {
   border: 1px solid red;
 }
 
-.gallery-less .photo-grid .col-sm > div {
+.gallery-less .photo-grid .col-sm>div {
   width: 100%;
   padding-bottom: 100%;
   background-size: cover;
@@ -476,13 +487,14 @@ body {
   border: 1px solid forestgreen;
 }
 
-.gallery-less .photo-grid .col-sm div + div {
+.gallery-less .photo-grid .col-sm div+div {
   margin-top: 16px;
 }
 
-.gallery-less .photo-grid .col-md div + div {
+.gallery-less .photo-grid .col-md div+div {
   margin-top: 32px;
 }
+
 /* 
 
       20장 초과
@@ -523,11 +535,9 @@ body {
   left: 0;
   width: 48px;
   height: 100%;
-  background-image: linear-gradient(
-    to right,
-    rgba(0, 0, 0, 0.11),
-    rgba(0, 0, 0, 0.12)
-  );
+  background-image: linear-gradient(to right,
+      rgba(0, 0, 0, 0.11),
+      rgba(0, 0, 0, 0.12));
 }
 
 .gallery-more .photo-grid a:last-child div {
@@ -551,9 +561,11 @@ body {
   /* test */
   background-color: red;
 }
+
 .gallery-more .photo-number span:first-child {
   font-size: 42px;
 }
+
 /* 
 
       갤러리 샘플
@@ -602,6 +614,7 @@ body {
 .p-img-11 {
   background-image: url(../assets/sample-img/all/gallery_1.jpg);
 }
+
 /* ================================
 
       찾아오시는 길
@@ -617,16 +630,21 @@ body {
   /* test */
   background-color: #384a43;
 }
+
 .map-short-info {
   max-width: 375px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 16px;
+  padding-right: 16px;
   /* test */
   background-color: wheat;
-  margin-left: 16px;
-  margin-right: 16px;
 }
+
 .map-short-info .heading {
   padding-bottom: 28px;
 }
+
 .map-short-info .map-img {
   width: 100%;
   height: 220px;
@@ -634,6 +652,7 @@ body {
   border: 1px solid red;
   margin-bottom: 8px;
 }
+
 .map-short-info .map-img img {
   width: 100%;
   height: 100%;
@@ -646,19 +665,22 @@ body {
   margin-top: 40px;
 }
 
-.map-short-info .info-grid + .info-grid {
+.map-short-info .info-grid+.info-grid {
   margin-top: 20px;
 }
+
 .map-short-info .info-grid .info-ic {
   width: 24px;
   height: 24px;
   margin-right: 16px;
 }
+
 .map-short-info .info-grid .info-ic img {
   width: 100%;
   height: 100%;
   margin-top: -2px;
 }
+
 /* 
 
       상세정보
@@ -672,13 +694,15 @@ body {
 
 .map-detail-info {
   max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
   /* test */
   background-color: wheat;
-  margin-left: 16px;
-  margin-right: 16px;
 }
 
-.map-detail-info .transfer-grid + .transfer-grid {
+.map-detail-info .transfer-grid+.transfer-grid {
   margin-top: 44px;
 }
 
@@ -707,13 +731,14 @@ body {
   color: #555555;
 }
 
-.map-detail-info .transfer-grid .info + .sub-title {
+.map-detail-info .transfer-grid .info+.sub-title {
   margin-top: 16px;
 }
 
 .map-detail-info .transfer-grid .sub-title.hint {
   margin-top: 0;
 }
+
 /* ================================
 
       방명록 & RSVP
@@ -721,7 +746,7 @@ body {
 ================================ */
 /* 
 
-      FIXME: 방명록
+      방명록
 
 */
 .bbs-container {
@@ -732,14 +757,64 @@ body {
 
 .bbs-wrap {
   max-width: 375px;
+  height: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 16px;
+  padding-right: 16px;
   /* test */
   background-color: wheat;
-  margin-left: 16px;
-  margin-right: 16px;
 }
 
 .bbs-wrap .heading-info {
   text-align: center;
+  margin-bottom: 28px;
+}
+
+.bbs-wrap .btn-primary {
+  margin-top: 16px;
+}
+
+/* ================================
+
+      Contact Us
+
+================================ */
+.contact-container {
+  width: 100%;
+  background-color: #516657;
+}
+
+.contact-wrap {
+  max-width: 375px;
+  height: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 24px;
+  padding-right: 24px;
+  /* test */
+  background-color: slategrey;
+}
+
+.contact-wrap .heading {
+  color: #ffffff;
+  margin-bottom: 44px;
+}
+
+.contact-wrap .title {
+  color: #b9d2b4;
+  font-size: 17px;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.contact-wrap .btn {
+  margin-bottom: 24px;
+}
+
+.contact-wrap .divider {
+  border-top: solid 1px rgba(255, 255, 255, 0.23);
+  margin-bottom: 24px;
 }
 
 /* ================================
@@ -747,16 +822,120 @@ body {
       버튼/효과
 
 ================================ */
+/* 
+
+      button
+
+*/
 .btn {
   width: 100%;
   height: 48px;
   line-height: 48px;
-  color: #384a43;
   font-weight: 800;
   font-size: 15px;
-  border: 1px solid #384a43;
   background-color: transparent;
 }
+
+.btn-primary {
+  color: #384a43;
+  border: 1px solid #384a43;
+}
+
+.btn-secondary {
+  border: solid 1px #ffffff;
+  color: #ffffff;
+}
+
+.btn img {
+  width: 24px;
+  height: auto;
+  margin-top: -4px;
+  margin-left: 24px;
+}
+
 .disable {
   opacity: 0.4;
+}
+
+/* 
+
+      FIXME: input
+
+*/
+.input-group {
+  display: flex;
+  border-bottom: 1px solid #979797;
+  height: 41px;
+}
+
+.input-group label {
+  -webkit-flex: 1;
+  flex: 1;
+  max-width: 100%;
+  height: 40px;
+  line-height: 40px;
+  font-size: 14px;
+  color: #7d7d7d;
+  text-align: left;
+  /* test */
+  border: 1px solid red;
+}
+
+.input-group select {
+  background-color: transparent;
+  /* Border-Radius, Default Style None */
+  border-radius: 0px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -webkit-border-radius: 0px;
+  height: 40px;
+  line-height: 40px;
+  max-width: 100%;
+  padding-left: 32px;
+  font-size: 14px;
+  color: #555555;
+  text-align: right;
+  /* test */
+  border: 1px solid red;
+}
+
+.input-group input {
+  max-width: 100%;
+  background-color: transparent;
+  height: 40px;
+  line-height: 40px;
+  text-align: right;
+  /* test */
+  border: 1px solid red;
+}
+
+input::placeholder {
+  color: #555555;
+}
+
+.input-group textarea {
+  display: block;
+  padding: 16px;
+  background-color: transparent;
+  width: 100%;
+  height: 147px;
+  border: solid 1px #979797;
+}
+
+.input-group.block {
+  display: block;
+  height: auto;
+  border: none;
+}
+
+.input-group.block>* {
+  flex: none;
+  width: 100%;
+}
+
+.copyright {
+  font-size: 12px;
+  text-align: center;
+  color: #a8bbad;
+  padding-bottom: 24px;
 }
