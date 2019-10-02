@@ -88,8 +88,9 @@ body {
 .leaf-img img {
   width: 124px;
   height: 50px;
-  /* test */
+  /* test
   border: 1px solid darkgoldenrod;
+  */
 }
 
 .heading {
@@ -97,15 +98,17 @@ body {
   font-weight: 800;
   text-align: center;
   color: #384a43;
-  /* test */
+  /* test
   border: 1px solid darkgreen;
+  */
 }
 
 .heading-info {
   padding-top: 16px;
   font-size: 14px;
-  /* test */
+  /* test
   border: 1px solid red;
+  */
 }
 
 /* ================================
@@ -122,7 +125,9 @@ body {
   position: relative;
   height: 100vh;
   width: 100%;
+  /*
   background-image: url(../assets/img/loading.svg);
+  */
   background-size: 52px 52px;
   background-repeat: no-repeat;
   background-position: center;
@@ -160,8 +165,9 @@ body {
   background-size: 240px auto;
   background-position: center;
   padding-top: 90px;
-  /* test */
+  /* test
   border: 1px solid red;
+  */
 }
 
 .main-container .photo-wrap .name p {
@@ -170,8 +176,9 @@ body {
   height: 60px;
   line-height: 60px;
   color: rgba(255, 255, 255, 0.7);
-  /* test */
+  /* test
   border: 1px solid blue;
+  */
 }
 
 /* 기본 아이폰 5/SE */
@@ -224,8 +231,9 @@ body {
   width: 100%;
   padding-bottom: 20px;
   color: #ffffff;
-  /* test */
+  /* test
   border: 1px solid darkgreen;
+  */
 }
 
 .main-container .location .divider {
@@ -241,8 +249,9 @@ body {
   height: 28px;
   line-height: 28px;
   font-size: 16px;
-  /* test */
+  /* test
   border: 1px solid fuchsia;
+  */
 }
 
 /* 기본 아이폰 5/SE */
@@ -259,8 +268,9 @@ body {
     font-size: 14px;
     height: 24px;
     line-height: 24px;
-    /* test */
+    /* test
     border: 1px solid fuchsia;
+    */
   }
 }
 
@@ -279,8 +289,10 @@ body {
   bottom: 0px;
   height: 124px;
   width: 100%;
-  /* test */
+  background-color: #ffffff;
+  /* test
   background-color: aquamarine;
+  */
 }
 
 .main-container .date-wrap .date-inner {
@@ -289,8 +301,9 @@ body {
   margin-right: auto;
   height: 100%;
   display: flex;
-  /* test */
+  /* test
   background-color: wheat;
+  */
 }
 
 .main-container .date-wrap .date-inner>div {
@@ -301,13 +314,13 @@ body {
   margin-bottom: auto;
   font-family: 'Rozha One', serif;
   color: #384a43;
-  /* test */
+  /* test
   background-color: red;
+  */
 }
 
 .main-container .date-wrap .date-inner>div+div {
-  /* test */
-  border-left: 1px solid #000000;
+  border-left: 1px solid #e1e4e3;
 }
 
 .main-container .date-wrap .date-inner>div p:first-child {
@@ -326,16 +339,16 @@ body {
 */
 .greetings-container {
   text-align: center;
-  /* test */
-  background-color: teal;
+  background-color: #ffffff;
 }
 
 .greetings-container .greetings-wrap {
   max-width: 375px;
   margin-left: auto;
   margin-right: auto;
-  /* test */
+  /* test
   background-color: yellowgreen;
+  */
 }
 
 .greetings-ment {
@@ -343,8 +356,9 @@ body {
   padding-bottom: 32px;
   margin-left: 16px;
   margin-right: 16px;
-  /* test */
+  /* test
   border: 1px solid red;
+  */
 }
 
 /* 
@@ -403,8 +417,7 @@ body {
 
 */
 .gallery-container {
-  /* test */
-  background-color: #384a43;
+  background-color: #ffffff;
 }
 
 /* 
@@ -416,10 +429,20 @@ body {
   max-width: 375px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 16px;
-  padding-right: 16px;
-  /* test */
+  padding-left: 32px;
+  padding-right: 32px;
+  /* test
   background-color: thistle;
+  */
+}
+
+/* 기본 아이폰 5/SE */
+@media only screen and (max-width: 320px) {
+  .gallery-less {
+    padding-left: 16px;
+    padding-right: 16px;
+
+  }
 }
 
 .gallery-less .heading {
@@ -437,13 +460,15 @@ body {
 .gallery-less .photo-grid .col-lg {
   width: 100%;
   height: 0;
+  border-radius: 20px;
   padding-bottom: 100%;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  /* test */
+  /* test
   background-color: aqua;
   border: 1px solid red;
+  */
 }
 
 .gallery-less .photo-grid+.photo-grid {
@@ -452,39 +477,45 @@ body {
 
 .gallery-less .photo-grid .col-md {
   width: 60%;
-  /* test */
+  /* test
   background-color: aqua;
   border: 1px solid red;
+  */
 }
 
 .gallery-less .photo-grid .col-md>div {
   width: 100%;
   padding-bottom: 100%;
+  border-radius: 20px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  /* test */
+  /* test
   background-color: coral;
   border: 1px solid forestgreen;
+  */
 }
 
 .gallery-less .photo-grid .col-sm {
   width: 40%;
   margin-left: 16px;
-  /* test */
+  /* test
   background-color: aqua;
   border: 1px solid red;
+  */
 }
 
 .gallery-less .photo-grid .col-sm>div {
   width: 100%;
   padding-bottom: 100%;
+  border-radius: 20px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  /* test */
+  /* test
   background-color: coral;
   border: 1px solid forestgreen;
+  */
 }
 
 .gallery-less .photo-grid .col-sm div+div {
@@ -504,8 +535,9 @@ body {
   max-width: 375px;
   margin-left: auto;
   margin-right: auto;
-  /* test */
+  /* test
   background-color: thistle;
+  */
 }
 
 .gallery-more .heading {
@@ -558,8 +590,9 @@ body {
   font-size: 22px;
   width: 100%;
   padding-right: 16px;
-  /* test */
+  /* test
   background-color: red;
+  */
 }
 
 .gallery-more .photo-number span:first-child {
@@ -627,18 +660,26 @@ body {
 */
 .map-short-container {
   width: 100%;
-  /* test */
-  background-color: #384a43;
+  background-color: #ffffff;
 }
 
 .map-short-info {
   max-width: 375px;
   margin-right: auto;
   margin-left: auto;
-  padding-left: 16px;
-  padding-right: 16px;
-  /* test */
+  padding-left: 40px;
+  padding-right: 40px;
+  /* test
   background-color: wheat;
+  */
+}
+
+/* 기본 아이폰 5/SE */
+@media only screen and (max-width: 320px) {
+  .map-short-info {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
 }
 
 .map-short-info .heading {
@@ -648,9 +689,10 @@ body {
 .map-short-info .map-img {
   width: 100%;
   height: 220px;
-  /* test */
-  border: 1px solid red;
   margin-bottom: 8px;
+  /* test
+  border: 1px solid red;
+  */
 }
 
 .map-short-info .map-img img {
@@ -688,18 +730,26 @@ body {
 */
 .map-detail-container {
   width: 100%;
-  /* test */
-  background-color: darkgrey;
+  background-color: #ffffff;
 }
 
 .map-detail-info {
   max-width: 375px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 16px;
-  padding-right: 16px;
-  /* test */
+  padding-left: 40px;
+  padding-right: 40px;
+  /* test
   background-color: wheat;
+  */
+}
+
+/* 기본 아이폰 5/SE */
+@media only screen and (max-width: 320px) {
+  .map-detail-info {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
 }
 
 .map-detail-info .transfer-grid+.transfer-grid {
@@ -751,8 +801,7 @@ body {
 */
 .bbs-container {
   width: 100%;
-  /* test */
-  background-color: #384a43;
+  background-color: #ffffff;
 }
 
 .bbs-wrap {
@@ -760,10 +809,11 @@ body {
   height: 100%;
   margin-right: auto;
   margin-left: auto;
-  padding-left: 16px;
-  padding-right: 16px;
-  /* test */
+  padding-left: 24px;
+  padding-right: 24px;
+  /* test
   background-color: wheat;
+  */
 }
 
 .bbs-wrap .heading-info {
@@ -792,8 +842,9 @@ body {
   margin-left: auto;
   padding-left: 24px;
   padding-right: 24px;
-  /* test */
+  /* test
   background-color: slategrey;
+  */
 }
 
 .contact-wrap .heading {
@@ -877,8 +928,9 @@ body {
   font-size: 14px;
   color: #7d7d7d;
   text-align: left;
-  /* test */
+  /* test
   border: 1px solid red;
+  */
 }
 
 .input-group select {
@@ -888,6 +940,7 @@ body {
   -webkit-appearance: none;
   -moz-appearance: none;
   -webkit-border-radius: 0px;
+  border: none;
   height: 40px;
   line-height: 40px;
   max-width: 100%;
@@ -895,8 +948,9 @@ body {
   font-size: 14px;
   color: #555555;
   text-align: right;
-  /* test */
+  /* test
   border: 1px solid red;
+  */
 }
 
 .input-group input {
@@ -905,8 +959,14 @@ body {
   height: 40px;
   line-height: 40px;
   text-align: right;
-  /* test */
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+  -moz-border-radius: 0px;
+  -khtml-border-radius: 0px;
+  border: none;
+  /* test
   border: 1px solid red;
+  */
 }
 
 input::placeholder {
