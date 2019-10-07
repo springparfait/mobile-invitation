@@ -2,7 +2,7 @@
  * 나눔명조 : 400, 700, 800
  * Pinyon : normal
  * Rozha : normal
- */
+*/
 
 /* 사파리 폰트 불러오기 안됨
 @font-face {
@@ -420,110 +420,8 @@ body {
   background-color: #ffffff;
 }
 
-/* 
-
-      20장 이하
-
-*/
-.gallery-less {
-  max-width: 375px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 32px;
-  padding-right: 32px;
-  /* test
-  background-color: thistle;
-  */
-}
-
-/* 기본 아이폰 5/SE */
-@media only screen and (max-width: 320px) {
-  .gallery-less {
-    padding-left: 16px;
-    padding-right: 16px;
-
-  }
-}
-
 .gallery-less .heading {
   text-align: left;
-}
-
-.gallery-less .photo-wrap {
-  margin-top: 24px;
-}
-
-.gallery-less .photo-grid {
-  display: flex;
-}
-
-.gallery-less .photo-grid .col-lg {
-  width: 100%;
-  height: 0;
-  border-radius: 20px;
-  padding-bottom: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  /* test
-  background-color: aqua;
-  border: 1px solid red;
-  */
-}
-
-.gallery-less .photo-grid+.photo-grid {
-  margin-top: 16px;
-}
-
-.gallery-less .photo-grid .col-md {
-  width: 60%;
-  /* test
-  background-color: aqua;
-  border: 1px solid red;
-  */
-}
-
-.gallery-less .photo-grid .col-md>div {
-  width: 100%;
-  padding-bottom: 100%;
-  border-radius: 20px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  /* test
-  background-color: coral;
-  border: 1px solid forestgreen;
-  */
-}
-
-.gallery-less .photo-grid .col-sm {
-  width: 40%;
-  margin-left: 16px;
-  /* test
-  background-color: aqua;
-  border: 1px solid red;
-  */
-}
-
-.gallery-less .photo-grid .col-sm>div {
-  width: 100%;
-  padding-bottom: 100%;
-  border-radius: 20px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  /* test
-  background-color: coral;
-  border: 1px solid forestgreen;
-  */
-}
-
-.gallery-less .photo-grid .col-sm div+div {
-  margin-top: 16px;
-}
-
-.gallery-less .photo-grid .col-md div+div {
-  margin-top: 32px;
 }
 
 /* 
@@ -597,55 +495,6 @@ body {
 
 .gallery-more .photo-number span:first-child {
   font-size: 42px;
-}
-
-/* 
-
-      갤러리 샘플
-
-*/
-.p-img-1 {
-  background-image: url(../assets/sample-img/all/gallery_1.jpg);
-}
-
-.p-img-2 {
-  background-image: url(../assets/sample-img/all/gallery_2.jpg);
-}
-
-.p-img-3 {
-  background-image: url(../assets/sample-img/all/gallery_3.jpg);
-}
-
-.p-img-4 {
-  background-image: url(../assets/sample-img/all/gallery_4.jpg);
-}
-
-.p-img-5 {
-  background-image: url(../assets/sample-img/all/gallery_5.jpg);
-}
-
-.p-img-6 {
-  background-image: url(../assets/sample-img/all/gallery_6.jpg);
-}
-
-.p-img-7 {
-  background-image: url(../assets/sample-img/all/gallery_7.jpg);
-}
-
-.p-img-8 {
-  background-image: url(../assets/sample-img/all/gallery_8.jpg);
-}
-
-.p-img-9 {
-  background-image: url(../assets/sample-img/all/gallery_9.jpg);
-}
-
-.p-img-10 {
-  background-image: url(../assets/sample-img/all/gallery_10.jpg);
-}
-
-.p-img-11 {
-  background-image: url(../assets/sample-img/all/gallery_1.jpg);
 }
 
 /* ================================
