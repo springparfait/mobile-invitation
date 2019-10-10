@@ -68,6 +68,11 @@ body {
   padding-bottom: 0;
 }
 
+.heading-info {
+  text-align: center;
+  font-size: 14px;
+}
+
 .flower-img {
   text-align: center;
 }
@@ -330,4 +335,18 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+/* ================================
+
+      갤러리
+
+================================ */
+/* 
+
+      갤러리 감싸는 영역
+
+*/
+.gallery-container {
+  /* test */
+  background-color: darkcyan;
 }
