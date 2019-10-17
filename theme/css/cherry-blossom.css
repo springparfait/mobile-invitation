@@ -90,6 +90,14 @@ body {
   */
 }
 
+.flower-sm-img {
+  width: 12px;
+  height: auto;
+  margin-top: -3px;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
 /* ================================
 
       메인
@@ -453,9 +461,80 @@ body {
 
 /* ================================
 
+      찾아오시는 길
+
+================================ */
+/* 
+
+      요약정보
+
+*/
+.map-short-container {
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.map-short-info {
+  text-align: center;
+  max-width: 375px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 40px;
+  padding-right: 40px;
+  /* test */
+  background-color: wheat;
+
+}
+
+/* 기본 아이폰 5/SE */
+@media only screen and (max-width: 320px) {
+  .map-short-info {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+.map-short-info .map-img {
+  width: 100%;
+  height: 220px;
+  margin-bottom: 24px;
+  /* test
+  border: 1px solid red;
+  */
+}
+
+.map-short-info .map-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.map-short-info .btn-primary {
+  margin-top: 24px;
+  border: 1px solid red;
+}
+
+/* ================================
+
       버튼/효과
 
 ================================ */
+/* 
+
+      button
+
+*/
+.btn {
+  color: #021328;
+  height: 52px;
+  font-size: 14px;
+  width: 100%;
+  border-radius: 25.5px;
+  font-weight: 700;
+}
+
+.btn-primary {
+  background-color: #f2cdcb;
+}
 
 .disable {
   opacity: 0.4;
