@@ -69,6 +69,12 @@ body {
   padding-bottom: 0;
 }
 
+.heading-normal {
+  text-align: left;
+  font-size: 16px;
+  font-weight: 800;
+}
+
 .heading-info {
   text-align: center;
   font-size: 14px;
@@ -78,7 +84,7 @@ body {
   text-align: center;
 }
 
-.flower-img+* {
+.flower-img + * {
   margin-top: 24px;
 }
 
@@ -382,7 +388,12 @@ body {
   position: relative;
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(to bottom, rgba(116, 81, 88, 0), rgba(116, 81, 88, 0.4) 82%, #745158);
+  background-image: linear-gradient(
+    to bottom,
+    rgba(116, 81, 88, 0),
+    rgba(116, 81, 88, 0.4) 82%,
+    #745158
+  );
 }
 
 .gallery-lg-container .photo-number-wrap {
@@ -452,7 +463,6 @@ body {
   top: 0;
 }
 
-
 .gallery-lg-container .photo-number .right {
   position: absolute;
   right: 0;
@@ -483,7 +493,6 @@ body {
   padding-right: 40px;
   /* test */
   background-color: wheat;
-
 }
 
 /* 기본 아이폰 5/SE */
@@ -512,7 +521,101 @@ body {
   margin-top: 24px;
   border: 1px solid red;
 }
+/* 
 
+      TODO: 상세정보
+
+*/
+.map-detail-container {
+  width: 100%;
+  background-color: #fff2f7;
+}
+
+.map-detail-info {
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 40px;
+  padding-right: 40px;
+  /* test
+  background-color: wheat;
+  */
+}
+
+/* 기본 아이폰 5/SE */
+@media only screen and (max-width: 320px) {
+  .map-detail-info {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+.map-detail-info .heading-info {
+  text-align: left;
+  margin-top: 18px;
+  margin-bottom: 46px;
+}
+
+.transfer-grid {
+  display: flex;
+}
+
+.transfer-grid + .transfer-grid {
+  margin-top: 28px;
+}
+
+.transfer-grid .trans-ic {
+  width: 22px;
+  height: 22px;
+  margin-right: 8px;
+  text-align: center;
+}
+
+.transfer-grid .trans-ic img {
+  width: 22px;
+  height: 22px;
+}
+
+.transfer-grid .title {
+  font-size: 14px;
+  color: #66788e;
+  margin-bottom: 4px;
+  padding-top: 2px;
+}
+
+.transfer-grid .info {
+  line-height: 1.7;
+}
+
+.transfer-grid + .flower-img {
+  margin-top: 32px;
+}
+
+/* ================================
+
+      방명록 & RSVP
+
+================================ */
+/* 
+
+      방명록
+
+*/
+.bbs-container {
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.bbs-wrap {
+  max-width: 375px;
+  height: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 24px;
+  padding-right: 24px;
+  /* test
+  background-color: wheat;
+  */
+}
 /* ================================
 
       버튼/효과
