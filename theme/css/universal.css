@@ -68,7 +68,7 @@
   height: auto;
 }
 
-.photo-wrap img {
+.photo-slider-modal-wrap .photo-wrap img {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -82,21 +82,21 @@
 
 /* 320px or less device support */
 @media screen and (max-width: 320px) {
-  .photo-wrap img {
+  .photo-slider-modal-wrap .photo-wrap img {
     max-height: 400px;
   }
 }
 
 /* 321px ~ 375px */
 @media screen and (min-width: 321px) and (max-width: 375px) {
-  .photo-wrap img {
+  .photo-slider-modal-wrap .photo-wrap img {
     max-height: 500px;
   }
 }
 
 /* 376px ~ 414px */
 @media screen and (min-width: 376px) and (max-width: 414px) {
-  .photo-wrap img {
+  .photo-slider-modal-wrap .photo-wrap img {
     max-height: 570px;
   }
 }
