@@ -1,0 +1,327 @@
+/*
+ * 나눔명조 : 400, 700, 800
+ * Great Vibes : normal / font-family: 'Great Vibes', cursive;
+*/
+
+body {
+  font-family: 'Nanum Myeongjo', serif;
+  font-weight: 400;
+  font-size: 15px;
+  color: #404040;
+  background-color: #f4f0ed;
+}
+
+/* ================================
+
+      전체 폰트/마진/패딩 설정
+
+================================ */
+/* 컨테이너 상단의 패딩 값 */
+.bold {
+  font-weight: 700;
+}
+
+.normal {
+  font-weight: 400;
+}
+
+/* 컨테이너 상단의 패딩 값 */
+.pdt-1 {
+  padding-top: 72px;
+}
+
+.pdb-1 {
+  padding-bottom: 72px;
+}
+
+.pdt-2 {
+  padding-top: 124px;
+}
+
+.pdb-2 {
+  padding-bottom: 124px;
+}
+
+/* ================================
+
+      전체 디자인 요소
+
+================================ */
+.gold-line {
+  text-align: center;
+  padding: 24px;
+}
+
+.gold-line>img {
+  width: 80px;
+  height: auto;
+}
+
+.heading {
+  font-size: 28px;
+  font-weight: normal;
+  text-align: center;
+  color: #000000;
+  font-family: 'Great Vibes', cursive;
+}
+
+.heading-info {
+  padding-top: 8px;
+  font-size: 14px;
+  color: #636363;
+}
+
+/* ================================
+
+      메인
+
+================================ */
+/* 
+
+      메인 사진 영역
+
+*/
+.main-container {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  /*
+  background-image: url(../assets/img/loading.svg);
+  */
+  background-size: 52px 52px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: rgba(1, 5, 3, 0.3);
+}
+
+.main-container .photo-wrap {
+  height: 100%;
+  width: 100%;
+  background-image: url(../assets/sample-img/autumn-starlight/elvis-bekmanis-1256093-unsplash.jpg);
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+}
+
+.main-container .photo-wrap .color-bg {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(51, 35, 28, 0.5);
+}
+
+/* 
+
+      메인 이름 영역
+
+*/
+.main-container .photo-wrap .name {
+  position: absolute;
+  top: 54px;
+  left: 40px;
+  color: #ffffff;
+}
+
+.main-container .photo-wrap .name p {
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.main-container .photo-wrap .name p:nth-child(2) {
+  font-family: 'Great Vibes', cursive;
+  font-size: 25px;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+/* 
+
+      메인 장소/날짜 영역
+
+*/
+.main-container .info-detail {
+  position: absolute;
+  text-align: center;
+  bottom: 60px;
+  width: 100%;
+  color: #ffffff;
+}
+
+.main-container .info-detail p+p {
+  margin-top: 6px;
+}
+
+.main-container .info-detail p+.gold-line {
+  margin-bottom: 0;
+}
+
+/* ================================
+
+      인사말
+
+================================ */
+/* 
+
+      인사말 영역
+
+*/
+.greetings-container {
+  text-align: center;
+  background-color: #ffffff;
+}
+
+/* 375px or less */
+@media only screen and (max-width: 375px) {
+  .greetings-container {
+    padding-bottom: 0;
+  }
+}
+
+
+.greetings-container .greetings-wrap {
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+  /* test
+  background-color: yellowgreen;
+  */
+}
+
+.greetings-ment {
+  padding-top: 40px;
+  padding-bottom: 32px;
+  margin-left: 16px;
+  margin-right: 16px;
+  /* test
+  border: 1px solid red;
+  */
+}
+
+/* 
+
+      신랑신부 이름만
+
+*/
+.greetings-container .simple-name {
+  font-size: 14px;
+}
+
+/* 
+
+      가족이름 영역
+
+*/
+.greetings-container .family-name {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.greetings-container .family-name .divider {
+  color: #daa071;
+  font-size: 10px;
+  padding-top: 4px;
+  margin: 0 4px;
+}
+
+.greetings-container .family-name .odering {
+  margin: 0 8px 0 4px;
+  font-weight: 400;
+  font-size: 12px;
+}
+
+/* 
+
+      인사말 사진
+
+*/
+.greetings-photo {
+  max-width: 375px;
+  height: 240px;
+  margin-top: 40px;
+}
+
+.greetings-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+/* ================================
+
+      갤러리
+
+================================ */
+/* 
+
+      갤러리 감싸는 영역
+
+*/
+.gallery-container {
+  background-color: #F4F0ED;
+}
+
+.gallery-less .heading-info {
+  text-align: center;
+}
+
+.gallery-less .gold-line {
+  padding: 8px 0 16px;
+}
+
+/* 
+
+      20장 초과
+
+*/
+.gallery-more {
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #F4F0ED;
+  /* test
+  background-color: thistle;
+  */
+}
+
+.gallery-more .heading-info {
+  text-align: center;
+}
+
+.gallery-more .gold-line {
+  padding: 8px 0 16px;
+}
+
+.gallery-more .photo-grid {
+  position: relative;
+  height: 390px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.gallery-more .photo-number {
+  text-align: center;
+  font-size: 24px;
+  font-family: 'Rozha One', serif;
+}
+
+.gallery-more .photo-number a {
+  margin-right: 16px;
+
+}
+
+.gallery-more .photo-number a:last-child {
+  margin-right: 0;
+  margin-left: 16px;
+}
+
+.gallery-more .photo-number a img {
+  height: 24px;
+  width: auto;
+}
+
+.gallery-more .photo-number .divider img {
+  height: 24px;
+  width: auto;
+}
