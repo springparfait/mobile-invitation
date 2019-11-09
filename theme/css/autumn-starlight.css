@@ -26,6 +26,14 @@ body {
 }
 
 /* 컨테이너 상단의 패딩 값 */
+.pdt-mini-1 {
+  padding-top: 8px;
+}
+
+.pdt-mini-2 {
+  padding-top: 16px;
+}
+
 .pdt-1 {
   padding-top: 72px;
 }
@@ -49,7 +57,7 @@ body {
 ================================ */
 .gold-line {
   text-align: center;
-  padding: 24px;
+  padding: 8px 0 16px;
 }
 
 .gold-line>img {
@@ -149,8 +157,8 @@ body {
   margin-top: 6px;
 }
 
-.main-container .info-detail p+.gold-line {
-  margin-bottom: 0;
+.main-container .info-detail .gold-line {
+  padding: 20px;
 }
 
 /* ================================
@@ -174,7 +182,6 @@ body {
     padding-bottom: 0;
   }
 }
-
 
 .greetings-container .greetings-wrap {
   max-width: 375px;
@@ -227,6 +234,11 @@ body {
   font-size: 12px;
 }
 
+.greetings-container .simple-name+.gold-line,
+.greetings-container .family-name+.gold-line {
+  padding: 28px;
+}
+
 /* 
 
       인사말 사진
@@ -244,7 +256,6 @@ body {
   object-fit: cover;
 }
 
-
 /* ================================
 
       갤러리
@@ -256,7 +267,7 @@ body {
 
 */
 .gallery-container {
-  background-color: #F4F0ED;
+  background-color: #f4f0ed;
 }
 
 .gallery-less .heading-info {
@@ -276,7 +287,7 @@ body {
   max-width: 375px;
   margin-left: auto;
   margin-right: auto;
-  background-color: #F4F0ED;
+  background-color: #f4f0ed;
   /* test
   background-color: thistle;
   */
@@ -308,7 +319,6 @@ body {
 
 .gallery-more .photo-number a {
   margin-right: 16px;
-
 }
 
 .gallery-more .photo-number a:last-child {
@@ -324,4 +334,421 @@ body {
 .gallery-more .photo-number .divider img {
   height: 24px;
   width: auto;
+}
+
+/* ================================
+
+      찾아오시는 길
+
+================================ */
+/* 
+
+      요약정보
+
+*/
+.map-short-container {
+  width: 100%;
+  background-color: #f4f0ed;
+}
+
+.map-short-info {
+  position: relative;
+  text-align: center;
+  max-width: 375px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 40px;
+  padding-right: 40px;
+  /* test
+  background-color: wheat;
+  */
+}
+
+/* 기본 아이폰 5/SE */
+@media only screen and (max-width: 320px) {
+  .map-short-info {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+.map-short-info .gold-line {
+  padding: 8px 0 16px;
+}
+
+.map-short-info .map-img {
+  width: 100%;
+  height: 220px;
+  margin-top: 20px;
+  margin-bottom: 24px;
+  border-style: solid;
+  border-width: 1px;
+  border-image-source: linear-gradient(57deg,
+      #d1d1d1 0%,
+      rgba(209, 209, 209, 0) 52%,
+      #d1d1d1 100%);
+  border-image-slice: 1;
+  /* test
+  border: 1px solid red;
+  */
+}
+
+.map-short-info .map-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.map-short-info .info-grid {
+  height: auto;
+  font-weight: 400;
+  text-align: center;
+}
+
+.map-short-info .info-grid+img {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  width: 13px;
+  height: 13px;
+}
+
+.map-short-info .btn {
+  margin-bottom: 32px;
+}
+
+.map-short-info .map-line-wrap {
+  height: 50px;
+  margin-top: 56px;
+}
+
+.map-short-info .map-line-wrap img {
+  height: 100%;
+  width: 2px;
+}
+
+/* 
+
+      상세정보
+
+*/
+.map-detail-container {
+  width: 100%;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.map-detail-info {
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 40px;
+  padding-right: 40px;
+  /* test
+  background-color: wheat;
+  */
+}
+
+/* 기본 아이폰 5/SE */
+@media only screen and (max-width: 320px) {
+  .map-detail-info {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+.map-detail-info .map-line-wrap {
+  height: 50px;
+}
+
+.map-detail-info .map-line-wrap img {
+  height: 100%;
+  width: 2px;
+}
+
+.map-detail-info .heading {
+  padding-top: 48px;
+}
+
+.map-detail-info .gold-line {
+  padding: 8px 0 16px;
+}
+
+.map-detail-info ins {
+  text-decoration: none;
+  font-weight: 700;
+  display: inline-block;
+  position: relative;
+}
+
+.map-detail-info .text-deco {
+  position: absolute;
+  bottom: 2px;
+  left: 0;
+  width: 114px;
+  height: 12px;
+  background-color: rgba(218, 160, 113, 0.29);
+}
+
+.map-detail-info .tab-bar {
+  padding-top: 32px;
+  width: 100%;
+  display: flex;
+  margin: 0 auto;
+  font-size: 13px;
+}
+
+.map-detail-info .tab-bar>div {
+  width: 100%;
+  padding: 8px;
+  border: solid 1px #dbdbdb;
+}
+
+.map-detail-info .tab-bar>div.active {
+  background-color: #423f3c;
+  border: 1px solid #423f3c;
+}
+
+.map-detail-info .tab-bar>div.active a {
+  color: #ffffff;
+}
+
+.map-detail-info .tab-bar>div a {
+  display: block;
+  width: 100%;
+}
+
+.map-detail-info .tab-bar>div+div {
+  margin-left: 8px;
+}
+
+.map-detail-info .tab-bar+.tab-bar {
+  padding-top: 8px;
+}
+
+.map-detail-info .tab-after {
+  margin: 32px auto 0;
+}
+
+.map-detail-info .tab-after .tab-after-title {
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.map-detail-info .tab-after .inner-content {
+  text-align: left;
+}
+
+.map-detail-info .tab-after .inner-content>* {
+  font-size: 16px;
+  color: #555555;
+  padding-left: 20px;
+  background-repeat: no-repeat;
+  background-size: 14px 14px;
+  background-position: 2px 4px;
+  background-image: url(../assets/img/autumn-starlight/box-ic.png);
+}
+
+.map-detail-info .tab-after .inner-content>*+* {
+  margin-top: 12px;
+}
+
+/* ================================
+
+      방명록 & RSVP
+
+================================ */
+/* 
+
+      방명록
+
+*/
+.bbs-container {
+  width: 100%;
+  background-color: #1B1B1B;
+}
+
+.bbs-wrap {
+  text-align: center;
+  max-width: 375px;
+  height: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.bbs-wrap .heading {
+  color: #ffffff;
+}
+
+.bbs-wrap .heading-info {
+  color: #c6c6c6;
+  margin-bottom: 32px;
+}
+
+.bbs-wrap button {
+  margin-top: 16px;
+  color: #ffffff;
+}
+
+/* ================================
+
+      Contact Us
+
+================================ */
+.contact-container {
+  position: relative;
+  width: 100%;
+  background-color: #1B1B1B;
+}
+
+.contact-wrap {
+  max-width: 375px;
+  height: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 24px;
+  padding-right: 24px;
+  /* test
+  background-color: slategrey;
+  */
+}
+
+.contact-wrap .heading {
+  color: #ffffff;
+}
+
+.contact-wrap .contact-table {
+  display: flex;
+  color: #ffffff;
+  margin-top: 40px;
+}
+
+.contact-wrap .contact-table.single div {
+  line-height: 44px;
+}
+
+.contact-wrap .contact-table div+div {
+  padding-left: 8px;
+}
+
+.contact-wrap .contact-table img {
+  width: 44px;
+  height: 44px;
+}
+
+.contact-wrap .contact-table p.label {
+  font-size: 12px;
+}
+
+.copyright {
+  margin-top: 120px;
+  font-size: 9px;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+/* ================================
+
+      버튼/효과
+
+================================ */
+/* 
+
+      button
+
+*/
+.btn {
+  width: 100%;
+  height: 48px;
+  line-height: 48px;
+  font-weight: 400;
+  font-size: 13px;
+  background-color: transparent;
+}
+
+.btn-primary {
+  color: #000000;
+  border: solid 1px #daa071;
+}
+
+/* 
+
+      Form
+
+*/
+.input-group {
+  text-align: left;
+  height: auto;
+  width: 100%;
+  display: block;
+}
+
+.input-group label {
+  color: #b8b8b8;
+  font-size: 13px;
+}
+
+.input-group>* {
+  display: block;
+}
+
+
+.input-group select {
+  width: 100%;
+  background-color: transparent;
+  /* Border-Radius, Default Style None */
+  border-radius: 0px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -webkit-border-radius: 0px;
+  border: none;
+  height: 40px;
+  line-height: 40px;
+  font-size: 14px;
+  color: #daa071;
+  border-bottom: 1px solid #daa071;
+  text-align: left;
+  background-image: url(../assets/img/autumn-starlight/select-arrow-down.png);
+  background-repeat: no-repeat;
+  background-size: 12px auto;
+  background-position: 98% 16px;
+  /* test
+  border: 1px solid red;
+  */
+}
+
+.input-group input {
+  color: #ffffff;
+  width: 100%;
+  background-color: transparent;
+  height: 40px;
+  line-height: 40px;
+  text-align: left;
+  font-size: 14px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+  -moz-border-radius: 0px;
+  -khtml-border-radius: 0px;
+  border: none;
+  border-bottom: 1px solid #595959;
+}
+
+.input-group *::placeholder {
+  color: #ffffff;
+}
+
+.input-group+.input-group {
+  margin-top: 8px;
+}
+
+.input-group textarea {
+  display: block;
+  padding: 16px;
+  font-size: 14px;
+  background-color: transparent;
+  width: 100%;
+  height: 147px;
+  border-radius: 4px;
+  border: solid 1px #595959;
+  margin-top: 12px;
 }
