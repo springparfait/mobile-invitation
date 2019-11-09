@@ -221,6 +221,10 @@ body {
   font-weight: bold;
 }
 
+.greetings-container .family-name div+div {
+  margin-top: 4px;
+}
+
 .greetings-container .family-name .divider {
   color: #daa071;
   font-size: 10px;
@@ -309,6 +313,13 @@ body {
   background-position: center;
   margin-top: 24px;
   margin-bottom: 24px;
+}
+
+/* 기본 아이폰 5/SE */
+@media only screen and (max-width: 320px) {
+  .gallery-more .photo-grid {
+    height: 300px;
+  }
 }
 
 .gallery-more .photo-number {

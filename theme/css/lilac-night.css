@@ -1,0 +1,371 @@
+/*
+ * 나눔명조 : 400, 700, 800
+ * font-family: 'Rozha One', serif;
+ * font-family: 'Great Vibes', cursive;
+*/
+
+body {
+  font-family: 'Nanum Myeongjo', serif;
+  font-weight: 400;
+  font-size: 15px;
+  color: #2B3243;
+  background-color: #2B3243;
+}
+
+/* ================================
+
+      전체 폰트/마진/패딩 설정
+
+================================ */
+/* 컨테이너 상단의 패딩 값 */
+.bold {
+  font-weight: 700;
+}
+
+.normal {
+  font-weight: 400;
+}
+
+/* 컨테이너 상단의 패딩 값 */
+.pdt-mini-1 {
+  padding-top: 8px;
+}
+
+.pdt-mini-2 {
+  padding-top: 16px;
+}
+
+.pdt-1 {
+  padding-top: 72px;
+}
+
+.pdb-1 {
+  padding-bottom: 72px;
+}
+
+.pdt-2 {
+  padding-top: 124px;
+}
+
+.pdb-2 {
+  padding-bottom: 124px;
+}
+
+/* ================================
+
+      전체 디자인 요소
+
+================================ */
+.crown-sm {
+  text-align: center;
+}
+
+.crown-sm>img {
+  width: 120px;
+  height: auto;
+}
+
+.crown-lg {
+  text-align: center;
+}
+
+.crown-lg>img {
+  width: 160px;
+  height: auto;
+}
+
+.heading {
+  font-family: 'Great Vibes', cursive;
+  font-size: 28px;
+  text-align: center;
+}
+
+.heading-info {
+  font-size: 13px;
+  color: #6D6F7B;
+  text-align: center;
+  margin: 8px auto 20px;
+}
+
+/* ================================
+
+      메인
+
+================================ */
+/* 
+
+      메인 사진 영역
+
+*/
+.main-container {
+  text-align: center;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.main-container .crown-sm {
+  margin-bottom: 30px;
+}
+
+/* 기본 아이폰 5/SE */
+@media only screen and (max-width: 320px) {
+  .main-container .crown-sm {
+    margin-bottom: 16px;
+  }
+}
+
+.main-container .photo-wrap {
+  width: 270px;
+  height: 270px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #2B3243;
+  border-radius: 8px;
+  box-shadow: 0 2px 26px 0 #ffdfcb59;
+  background-image: url(../assets/sample-img/lilac-night/dmitry-schemelev-OEnKKXvdbDU-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  background-size: cover;
+}
+
+/* 기본 아이폰 5/SE */
+@media only screen and (max-width: 320px) {
+  .main-container .photo-wrap {
+    width: 240px;
+    height: 240px;
+  }
+}
+
+@media only screen and (min-width: 410px) {
+  .main-container .photo-wrap {
+    width: 340px;
+    height: 340px;
+  }
+}
+
+.main-container .name {
+  margin-top: 26px;
+  font-size: 21px;
+  color: #2b3243;
+  font-family: 'Rozha One', serif;
+  margin-bottom: 30px;
+}
+
+/* 기본 아이폰 5/SE */
+@media only screen and (max-width: 320px) {
+  .main-container .name {
+    margin-top: 16px;
+    font-size: 18px;
+    margin-bottom: 16px;
+  }
+}
+
+.main-container .detail-info {
+  position: absolute;
+  width: 100%;
+  bottom: 50px;
+}
+
+/* 기본 아이폰 5/SE */
+@media only screen and (max-width: 320px) {
+  .main-container .detail-info {
+    bottom: 40px;
+    font-size: 14px;
+  }
+}
+
+.main-container .detail-info .deco {
+  font-family: 'Homemade Apple', cursive;
+  padding-bottom: 4px;
+}
+
+/* ================================
+
+      인사말
+
+================================ */
+/* 
+
+      인사말 영역
+
+*/
+.greetings-container {
+  text-align: center;
+}
+
+/* 375px or less */
+@media only screen and (max-width: 375px) {
+  .greetings-container {
+    padding-bottom: 0;
+  }
+}
+
+.greetings-container .greetings-wrap {
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.greetings-container .heading {
+  color: #B88F7D;
+  margin-top: 16px;
+}
+
+.greetings-ment {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  margin-left: 16px;
+  margin-right: 16px;
+  color: #e2d6c4;
+  font-weight: 400;
+}
+
+/* 
+
+      신랑신부 이름만
+
+*/
+.greetings-container .simple-name {
+  color: #E2D6C4;
+}
+
+
+/* 
+
+      가족이름 영역
+
+*/
+.greetings-container .family-name {
+  font-size: 14px;
+  font-weight: bold;
+  color: #e2d6c4;
+}
+
+.greetings-container .family-name div+div {
+  margin-top: 4px;
+}
+
+.greetings-container .family-name .divider {
+  color: #daa071;
+  font-size: 10px;
+  padding-top: 4px;
+  margin: 0 4px;
+}
+
+.greetings-container .family-name .odering {
+  margin: 0 8px 0 4px;
+  font-weight: 400;
+  font-size: 12px;
+  color: #949393;
+}
+
+.greetings-container .simple-name+.crown-sm,
+.greetings-container .family-name+.crown-sm {
+  padding-top: 32px;
+}
+
+
+.greetings-photo {
+  max-width: 375px;
+  height: 240px;
+  margin-top: 40px;
+}
+
+.greetings-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+/* ================================
+
+      갤러리
+
+================================ */
+/* 
+
+      갤러리 감싸는 영역
+
+*/
+.gallery-container {
+  background-color: #f4f0ed;
+}
+
+.gallery-less .heading-info {
+  text-align: center;
+}
+
+.gallery-less .gold-line {
+  padding: 8px 0 16px;
+}
+
+/* 
+
+      20장 초과
+
+*/
+.gallery-more {
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #f4f0ed;
+  /* test
+  background-color: thistle;
+  */
+}
+
+.gallery-more .heading-info {
+  text-align: center;
+}
+
+.gallery-more .gold-line {
+  padding: 8px 0 16px;
+}
+
+.gallery-more .photo-grid {
+  position: relative;
+  height: 390px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+/* 기본 아이폰 5/SE */
+@media only screen and (max-width: 320px) {
+  .gallery-more .photo-grid {
+    height: 300px;
+  }
+}
+
+
+.gallery-more .photo-number {
+  padding-top: 24px;
+  text-align: center;
+  font-size: 24px;
+  font-family: 'Rozha One', serif;
+}
+
+.gallery-more .photo-number a {
+  margin-right: 16px;
+}
+
+.gallery-more .photo-number a:last-child {
+  margin-right: 0;
+  margin-left: 16px;
+}
+
+.gallery-more .photo-number a img {
+  height: 24px;
+  width: auto;
+}
+
+.gallery-more .photo-number .divider img {
+  height: 24px;
+  width: auto;
+}

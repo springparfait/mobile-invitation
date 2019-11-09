@@ -4,43 +4,6 @@
  * Rozha : normal
 */
 
-/* 사파리 폰트 불러오기 안됨
-@font-face {
-  font-family: 'Nanum Myeongjo', serif;
-  src: url('../assets/font/Nanum_Myeongjo/NanumMyeongjo-Regular.ttf') format('svg');
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Nanum Myeongjo', serif;
-  src: url('../assets/font/Nanum_Myeongjo/NanumMyeongjo-Bold.ttf') format('svg');
-  font-weight: 700;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Nanum Myeongjo', serif;
-  src: url('../assets/font/Nanum_Myeongjo/NanumMyeongjo-ExtraBold.ttf');
-  font-weight: 800;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Pinyon Script', cursive;
-  src: url('../assets/font/Pinyon_Script/PinyonScript-Regular.ttf') format('opentype');
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Rozha One', serif;
-  src: url('../assets/font/Rozha_One/RozhaOne-Regular.ttf');
-  font-weight: 400;
-  font-style: normal;
-}
-*/
-
 body {
   font-family: 'Nanum Myeongjo', serif;
   font-weight: 400;
