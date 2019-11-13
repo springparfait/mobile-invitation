@@ -5,11 +5,11 @@
 */
 
 body {
-  font-family: 'Nanum Myeongjo', serif;
+  font-family: "Nanum Myeongjo", serif;
   font-weight: 400;
   font-size: 15px;
-  color: #2B3243;
-  background-color: #2B3243;
+  color: #2b3243;
+  background-color: #2b3243;
 }
 
 /* ================================
@@ -60,7 +60,7 @@ body {
   text-align: center;
 }
 
-.crown-sm>img {
+.crown-sm > img {
   width: 120px;
   height: auto;
 }
@@ -69,20 +69,20 @@ body {
   text-align: center;
 }
 
-.crown-lg>img {
+.crown-lg > img {
   width: 160px;
   height: auto;
 }
 
 .heading {
-  font-family: 'Great Vibes', cursive;
+  font-family: "Great Vibes", cursive;
   font-size: 28px;
   text-align: center;
 }
 
 .heading-info {
   font-size: 13px;
-  color: #6D6F7B;
+  color: #6d6f7b;
   text-align: center;
   margin: 8px auto 20px;
 }
@@ -121,7 +121,7 @@ body {
   height: 270px;
   margin-left: auto;
   margin-right: auto;
-  background-color: #2B3243;
+  background-color: #2b3243;
   border-radius: 8px;
   box-shadow: 0 2px 26px 0 #ffdfcb59;
   background-image: url(../assets/sample-img/lilac-night/dmitry-schemelev-OEnKKXvdbDU-unsplash.jpg);
@@ -150,7 +150,7 @@ body {
   margin-top: 26px;
   font-size: 21px;
   color: #2b3243;
-  font-family: 'Rozha One', serif;
+  font-family: "Rozha One", serif;
   margin-bottom: 30px;
 }
 
@@ -178,7 +178,7 @@ body {
 }
 
 .main-container .detail-info .deco {
-  font-family: 'Homemade Apple', cursive;
+  font-family: "Homemade Apple", cursive;
   padding-bottom: 4px;
 }
 
@@ -210,7 +210,7 @@ body {
 }
 
 .greetings-container .heading {
-  color: #B88F7D;
+  color: #b88f7d;
   margin-top: 16px;
 }
 
@@ -229,9 +229,8 @@ body {
 
 */
 .greetings-container .simple-name {
-  color: #E2D6C4;
+  color: #e2d6c4;
 }
-
 
 /* 
 
@@ -244,7 +243,7 @@ body {
   color: #e2d6c4;
 }
 
-.greetings-container .family-name div+div {
+.greetings-container .family-name div + div {
   margin-top: 4px;
 }
 
@@ -262,11 +261,10 @@ body {
   color: #949393;
 }
 
-.greetings-container .simple-name+.crown-sm,
-.greetings-container .family-name+.crown-sm {
+.greetings-container .simple-name + .crown-sm,
+.greetings-container .family-name + .crown-sm {
   padding-top: 32px;
 }
-
 
 .greetings-photo {
   max-width: 375px;
@@ -279,7 +277,6 @@ body {
   height: 100%;
   object-fit: cover;
 }
-
 
 /* ================================
 
@@ -343,12 +340,11 @@ body {
   }
 }
 
-
 .gallery-more .photo-number {
   padding-top: 24px;
   text-align: center;
   font-size: 24px;
-  font-family: 'Rozha One', serif;
+  font-family: "Rozha One", serif;
 }
 
 .gallery-more .photo-number a {
@@ -368,4 +364,418 @@ body {
 .gallery-more .photo-number .divider img {
   height: 24px;
   width: auto;
+}
+
+/* ================================
+
+      찾아오시는 길
+
+================================ */
+/* 
+
+      요약정보
+
+*/
+.map-short-container {
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.map-short-info {
+  position: relative;
+  text-align: center;
+  max-width: 375px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+/* 기본 아이폰 5/SE */
+@media only screen and (max-width: 320px) {
+  .map-short-info {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+.map-short-info .map-img {
+  width: 100%;
+  height: 220px;
+  margin-top: 20px;
+  margin-bottom: 24px;
+  border-style: solid;
+  border-width: 1px;
+  border-image-source: linear-gradient(
+    57deg,
+    #d1d1d1 0%,
+    rgba(209, 209, 209, 0) 52%,
+    #d1d1d1 100%
+  );
+  border-image-slice: 1;
+}
+
+.map-short-info .map-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.map-short-info .btn {
+  margin-bottom: 32px;
+}
+
+.map-short-info .info-grid {
+  height: auto;
+  font-weight: 400;
+  text-align: center;
+}
+
+.map-short-info .crown-sm {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.map-short-info .crown-sm img {
+  width: 80px;
+  height: auto;
+}
+
+/* 
+
+      상세정보
+
+*/
+.map-detail-container {
+  width: 100%;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.map-detail-info {
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 40px;
+  padding-right: 40px;
+  /* test
+  background-color: wheat;
+  */
+}
+
+/* 기본 아이폰 5/SE */
+@media only screen and (max-width: 320px) {
+  .map-detail-info {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+.map-detail-info .map-line-wrap {
+  height: 50px;
+}
+
+.map-detail-info .map-line-wrap img {
+  height: 100%;
+  width: 2px;
+}
+
+.map-detail-info .heading {
+  padding-top: 48px;
+}
+
+.map-detail-info .heading-info {
+  margin-bottom: 0;
+}
+
+.map-detail-info .gold-line {
+  padding: 8px 0 16px;
+}
+
+.map-detail-info ins {
+  text-decoration: none;
+  font-weight: 700;
+  display: inline-block;
+  position: relative;
+  color: #000000;
+}
+
+.map-detail-info .text-deco {
+  position: absolute;
+  bottom: 2px;
+  left: 0;
+  width: 114px;
+  height: 12px;
+  background-color: rgba(171, 182, 245, 0.29);
+}
+
+.map-detail-info .tab-bar {
+  padding-top: 32px;
+  width: 100%;
+  display: flex;
+  margin: 0 auto;
+  font-size: 13px;
+}
+
+.map-detail-info .tab-bar > div {
+  width: 100%;
+  padding: 8px;
+  border: solid 1px #dbdbdb;
+}
+
+.map-detail-info .tab-bar > div.active {
+  background-color: #102b3f;
+  border: 1px solid #102b3f;
+}
+
+.map-detail-info .tab-bar > div.active a {
+  color: #ffffff;
+}
+
+.map-detail-info .tab-bar > div a {
+  display: block;
+  width: 100%;
+}
+
+.map-detail-info .tab-bar > div + div {
+  margin-left: 8px;
+}
+
+.map-detail-info .tab-bar + .tab-bar {
+  padding-top: 8px;
+}
+
+.map-detail-info .tab-after {
+  margin: 32px auto 0;
+}
+
+.map-detail-info .tab-after .tab-after-title {
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.map-detail-info .tab-after .inner-content {
+  text-align: left;
+}
+
+.map-detail-info .tab-after .inner-content > * {
+  font-size: 16px;
+  color: #555555;
+  padding-left: 20px;
+  background-repeat: no-repeat;
+  background-size: 14px 14px;
+  background-position: 2px 4px;
+  background-image: url(../assets/img/lilac-night/detail-deco.png);
+}
+
+.map-detail-info .tab-after .inner-content > * + * {
+  margin-top: 12px;
+}
+
+/* ================================
+
+      방명록 & RSVP
+
+================================ */
+/* 
+
+      방명록
+
+*/
+.bbs-container {
+  width: 100%;
+}
+
+.bbs-wrap {
+  text-align: center;
+  max-width: 375px;
+  height: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.bbs-wrap .heading {
+  color: #ffffff;
+}
+
+.bbs-wrap .heading-info {
+  color: #c6c6c6;
+}
+
+.bbs-wrap .crown-lg {
+  margin-bottom: 40px;
+}
+
+.bbs-wrap button {
+  margin-top: 16px;
+  color: #ffffff;
+  border: 1px solid #cc9979;
+}
+
+/* ================================
+
+      Contact Us
+
+================================ */
+.contact-container {
+  position: relative;
+  width: 100%;
+}
+
+.contact-wrap {
+  max-width: 375px;
+  height: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 24px;
+  padding-right: 24px;
+  /* test
+  background-color: slategrey;
+  */
+}
+
+.contact-wrap .heading {
+  color: #ffffff;
+}
+
+.contact-wrap .crown-lg {
+  margin-top: 32px;
+}
+
+.contact-wrap .contact-table {
+  display: flex;
+  color: #ffffff;
+  margin-top: 40px;
+}
+
+.contact-wrap .contact-table.single div {
+  line-height: 44px;
+}
+
+.contact-wrap .contact-table div + div {
+  padding-left: 8px;
+}
+
+.contact-wrap .contact-table img {
+  width: 44px;
+  height: 44px;
+}
+
+.contact-wrap .contact-table p.label {
+  font-size: 12px;
+}
+
+.copyright {
+  margin-top: 120px;
+  font-size: 9px;
+  text-align: center;
+  padding-bottom: 20px;
+  color: rgba(255, 255, 255, 0.35);
+}
+
+/* ================================
+
+      버튼/효과
+
+================================ */
+/* 
+
+      button
+
+*/
+.btn {
+  width: 100%;
+  height: 48px;
+  line-height: 48px;
+  font-weight: 400;
+  font-size: 13px;
+  background-color: transparent;
+}
+
+.btn-primary {
+  color: #000000;
+  border: solid 1px #102b3f;
+}
+
+/* 
+
+      Form
+
+*/
+.input-group {
+  text-align: left;
+  height: auto;
+  width: 100%;
+  display: block;
+}
+
+.input-group label {
+  color: #b8b8b8;
+  font-size: 13px;
+}
+
+.input-group > * {
+  display: block;
+}
+
+.input-group select {
+  width: 100%;
+  background-color: transparent;
+  /* Border-Radius, Default Style None */
+  border-radius: 0px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -webkit-border-radius: 0px;
+  border: none;
+  height: 40px;
+  line-height: 40px;
+  font-size: 14px;
+  color: #daa071;
+  border-bottom: 1px solid #daa071;
+  text-align: left;
+  background-image: url(../assets/img/autumn-starlight/select-arrow-down.png);
+  background-repeat: no-repeat;
+  background-size: 12px auto;
+  background-position: 98% 16px;
+  /* test
+  border: 1px solid red;
+  */
+}
+
+.input-group input {
+  color: #ffffff;
+  width: 100%;
+  background-color: transparent;
+  height: 40px;
+  line-height: 40px;
+  text-align: left;
+  font-size: 14px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+  -moz-border-radius: 0px;
+  -khtml-border-radius: 0px;
+  border: none;
+  border-bottom: 1px solid #595959;
+}
+
+.input-group *::placeholder {
+  color: #ffffff;
+}
+
+.input-group + .input-group {
+  margin-top: 8px;
+}
+
+.input-group textarea {
+  display: block;
+  padding: 16px;
+  font-size: 14px;
+  background-color: transparent;
+  width: 100%;
+  height: 147px;
+  border-radius: 4px;
+  border: solid 1px #595959;
+  margin-top: 12px;
+  color: #ffffff;
 }
